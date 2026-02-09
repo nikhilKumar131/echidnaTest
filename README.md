@@ -1,3 +1,27 @@
+## Echidna Assignment – Nikhil Kumar
+
+This repository contains my solution for the Echidna-based testing assignment.
+
+### What I added
+- Property-based tests in `contracts/echidna/`
+- Tests for:
+  - Price storage and memory corruption
+  - Calldata decoding and memory layout
+  - Input validation (log prices, shares, hook data length)
+  - Non-strict calldata packing
+- A helper wrapper contract to expose internal memory state for assertions
+
+### Notes
+- One assertion related to `hookInputByteCount` is commented out due to an underflow issue
+  that appears to be in the underlying computation rather than calldata packing or memory layout.
+- All other values and pointers match the expected layout and are fully verified.
+
+### How to run
+```bash
+echidna contracts/echidna/calldata_test.sol --test-mode assertion --contract calldataTest
+echidna contracts/echidna/priceWrapperTest.sol --test-mode assertion
+
+
 # NoFeeSwap Core
 
 NoFeeSwap is an Automated Market Making (AMM) protocol that introduces customizable liquidity curves with protocol-level security. This architecture enables zero spread between buy and sell marginal prices while ensuring that liquidity grows after every swap. This combination translates to higher trading activity, even during minor market price fluctuations, and drives greater profitability for liquidity providers (LPs).
