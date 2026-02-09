@@ -5,7 +5,7 @@ NOTE: PLEASE REFFER TO NOTION FOR DECISION AND TRADEOFF
 NOTION: https://www.notion.so/Echidna-Assisment-3027d64e79c280218da0c58c158e4324?source=copy_link
 
 ### What I added
-- Property-based tests in `contracts/echidna/`
+- tests in `contracts/echidna/`
 - Tests for:
   - Price storage and memory corruption
   - Calldata decoding and memory layout
@@ -13,10 +13,6 @@ NOTION: https://www.notion.so/Echidna-Assisment-3027d64e79c280218da0c58c158e4324
   - Non-strict calldata packing
 - A helper wrapper contract to expose internal memory state for assertions
 
-### Notes
-- One assertion related to `hookInputByteCount` is commented out due to an underflow issue
-  that appears to be in the underlying computation rather than calldata packing or memory layout.
-- All other values and pointers match the expected layout and are fully verified.
 
 ### How to run
 ```bash
