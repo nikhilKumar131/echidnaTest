@@ -1,6 +1,8 @@
 ## Echidna Assignment – Nikhil Kumar
 
 This repository contains my solution for the Echidna-based testing assignment.
+NOTE: PLEASE REFFER TO NOTION FOR DECISION AND TRADEOFF 
+NOTION: https://www.notion.so/Echidna-Assisment-3027d64e79c280218da0c58c158e4324?source=copy_link
 
 ### What I added
 - Property-based tests in `contracts/echidna/`
@@ -19,8 +21,8 @@ This repository contains my solution for the Echidna-based testing assignment.
 ### How to run
 ```bash
 echidna contracts/echidna/calldata_test.sol --test-mode assertion --contract calldataTest
-echidna contracts/echidna/priceWrapperTest.sol --test-mode assertion
-
+echidna contracts/echidna/PriceWrapperTest.sol --test-mode assertion
+```
 
 # NoFeeSwap Core
 
