@@ -1,0 +1,576 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "CurveLengthIsZero",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hookDataByteCount",
+						"type": "uint256"
+					}
+				],
+				"name": "HookDataTooLong",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "X47",
+						"name": "poolGrowthPortion",
+						"type": "uint256"
+					}
+				],
+				"name": "InvalidGrowthPortion",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "shares",
+						"type": "int256"
+					}
+				],
+				"name": "InvalidNumberOfShares",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "X59",
+						"name": "qOffset",
+						"type": "int256"
+					}
+				],
+				"name": "LogOffsetOutOfRange",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "X59",
+						"name": "logPrice",
+						"type": "int256"
+					}
+				],
+				"name": "LogPriceOutOfRange",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "poolId",
+						"type": "uint256"
+					}
+				],
+				"name": "PoolExists",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "PoolIdCannotBeZero",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "Tag",
+						"name": "tag0",
+						"type": "uint256"
+					},
+					{
+						"internalType": "Tag",
+						"name": "tag1",
+						"type": "uint256"
+					}
+				],
+				"name": "TagsOutOfOrder",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "_readCollectInput",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_readDonateInput",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_readInitializeInput",
+				"outputs": [
+					{
+						"internalType": "KernelCompact",
+						"name": "kernelCompact",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_readModifyKernelInput",
+				"outputs": [
+					{
+						"internalType": "KernelCompact",
+						"name": "kernelCompact",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_readModifyPoolGrowthPortionInput",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_readModifyPositionInput",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_readSwapInput",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_readUpdateGrowthPortionsInput",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "readAndExpose",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "poolId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "X59",
+								"name": "logMin",
+								"type": "int256"
+							},
+							{
+								"internalType": "X59",
+								"name": "logMax",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "shares",
+								"type": "int256"
+							},
+							{
+								"internalType": "uint16",
+								"name": "hookLen",
+								"type": "uint16"
+							}
+						],
+						"internalType": "struct CallWrapperExtended.Exposed",
+						"name": "e",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "readAndExposeAll",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "poolId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "X59",
+								"name": "logMin",
+								"type": "int256"
+							},
+							{
+								"internalType": "X59",
+								"name": "logMax",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "shares",
+								"type": "int256"
+							},
+							{
+								"internalType": "uint16",
+								"name": "hookLen",
+								"type": "uint16"
+							},
+							{
+								"internalType": "Curve",
+								"name": "curvePtr",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "hookPtr",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "freePtr",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "hookInputBytes",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct CallWrapperExtended.ExposedAll",
+						"name": "e",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"errors": {
+				"CurveLengthIsZero()": [
+					{
+						"notice": "Thrown when 'curveLength' is zero upon initialization."
+					}
+				],
+				"HookDataTooLong(uint256)": [
+					{
+						"notice": "Thrown when the size of 'hookData' exceeds 'type(uint16).max'."
+					}
+				],
+				"InvalidGrowthPortion(uint256)": [
+					{
+						"notice": "Thrown when a given growth portion is greater than one."
+					}
+				],
+				"InvalidNumberOfShares(int256)": [
+					{
+						"notice": "Thrown when attempting to mint/burn a position with zero shares or when the number of shares does not belong to  '[- type(int128).max, type(int128).max]'."
+					}
+				],
+				"LogOffsetOutOfRange(int256)": [
+					{
+						"notice": "Thrown when 'log(pOffset)' is not within the range '[-89, +89]'."
+					}
+				],
+				"LogPriceOutOfRange(int256)": [
+					{
+						"notice": "Thrown when a given logarithmic price does not belong to the range '[log(pOffset) - 16 + 1 / (2 ** 59), log(pOffset) + 16 - 1 / (2 ** 59)]'."
+					}
+				],
+				"PoolExists(uint256)": [
+					{
+						"notice": "Thrown when attempting to initialize a pool that already exists."
+					}
+				],
+				"PoolIdCannotBeZero()": [
+					{
+						"notice": "Thrown when attempting to initialize a pool with 'poolId == 0'."
+					}
+				],
+				"TagsOutOfOrder(uint256,uint256)": [
+					{
+						"notice": "Thrown when the given tags are not in the correct order, i.e., 'tag0 < tag1'."
+					}
+				]
+			},
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/echidna/calldata_test.sol": "CallWrapperExtended"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/echidna/TestUtilities.sol": {
+			"keccak256": "0x32dfee4aaaa4c1084c44b5f585a8047245b89af3ff210ebe9cd61a567e61263f",
+			"urls": [
+				"bzz-raw://460084c44b5bfeaf12c2e6e32420648b7386b6ea4678b7ff6fadf0ae5e13173c",
+				"dweb:/ipfs/QmWxQogUApSJG93DbyRDSJQQ7HMCcXhXQGsGEc3d6BvDjW"
+			]
+		},
+		"contracts/echidna/calldata_test.sol": {
+			"keccak256": "0x48d51540aade52d9a00c5043da63942e687f653c070cb0300ee4fece62c6da2f",
+			"urls": [
+				"bzz-raw://4ae7eda1be6d7744b3e3b1893b1f64fd76012bd582826e5f5b928287904d7bd1",
+				"dweb:/ipfs/QmNM7XrKUhVcMJwWzDHQrBDsqG1thCZWRhQWndTzVHBPjW"
+			]
+		},
+		"contracts/helpers/CalldataWrapper.sol": {
+			"keccak256": "0x2fb03db946365867c2061e67ac76b6524b45ee02a077e547e9619660a56ee82a",
+			"urls": [
+				"bzz-raw://5d2d18fbf44f349b096d29f77a27bbc4f60ed1307a3df27955eb046fc8270eec",
+				"dweb:/ipfs/QmRQfp5V1MbjWJemBANLcJD8Pe5cPSfPjCihpXeWjtgCYc"
+			]
+		},
+		"contracts/interfaces/INofeeswap.sol": {
+			"keccak256": "0xfef5fda9b1b5fa5c36ea5e880768f083651da7111e8a1094f2268a1a646be5e0",
+			"urls": [
+				"bzz-raw://e750625f7f479a970481f87d7364bd318cbd5328ad5b5555074423322cd9eb36",
+				"dweb:/ipfs/QmUMi6gFuA8Xejm5ZmcWgwe5gGE1ecnEDhd7pVviAiE2PY"
+			]
+		},
+		"contracts/interfaces/ISentinel.sol": {
+			"keccak256": "0x3d4b41ac7607fb097819da35d7b16bd3d7b1792d4c4b5487c4fd8c2e31cbd5cf",
+			"urls": [
+				"bzz-raw://b2616977e1c821bb64748f987d6d113c2b44664f8486da35ce17e7376c56bcf8",
+				"dweb:/ipfs/QmXNEKi6X1nW85Eo2VT4tjN49iUaBZt5PwaaAEwpoK4nXj"
+			]
+		},
+		"contracts/interfaces/IStorageAccess.sol": {
+			"keccak256": "0x7286e621bc6e6ea890a12c31143c52086c262b50bbd2de71adf7bdbf93a5fc47",
+			"urls": [
+				"bzz-raw://13eb8062ea0a70d29ca8067111d24d762f299a217144465beb0cee832e9568c7",
+				"dweb:/ipfs/QmdpYCe4TtSbYvNaQPpyrpPkJMBb5CagRyumAT8secBRh1"
+			]
+		},
+		"contracts/interfaces/ITransientAccess.sol": {
+			"keccak256": "0x5d416cff5a15960564f714d18824c0bbbefa29d05e6dfc5eee5f2e7c03d1ee09",
+			"urls": [
+				"bzz-raw://2acf1d6a189fc877c0973b7f8d79c53f6dc058691dde7a6ecdcca24d368c123d",
+				"dweb:/ipfs/QmWJoqhQgfZVHg3M1mnWFBWmHBEnmsYPbetDBEXoBihn5N"
+			]
+		},
+		"contracts/utilities/Calldata.sol": {
+			"keccak256": "0x15e74985afb3f6ebb7a3f2171406bc33c76691ada6cf39ca83fc981e9c1b94a1",
+			"urls": [
+				"bzz-raw://c747a0e0d5336a955cb0e98baa0e6983d8c9a2ee087dba7d3d5ae0f4d14dc42d",
+				"dweb:/ipfs/QmXw81WwhjrZG7gbxaZHrqHs1MhbacinoH4DSnk1oVFmbB"
+			]
+		},
+		"contracts/utilities/Curve.sol": {
+			"keccak256": "0x604099805e8ba7b822ba7291df8d107630a631a4182dfe4a79cc5c1e6b0b13fd",
+			"urls": [
+				"bzz-raw://f61309b7a4f83a4a7be2f4d53657e5db8fb3f745011a74f5bab6585fbc4265f4",
+				"dweb:/ipfs/QmcvUKmXSSbiydxQmDiqCYaooGjNw96JLVjbcWXyGuGMk4"
+			]
+		},
+		"contracts/utilities/Errors.sol": {
+			"keccak256": "0xd47ce724fc7d199103fb63666bcf72554065692c0f6d42344fb00741834b37e3",
+			"urls": [
+				"bzz-raw://f974d049bd190aa70b1145ecf0e6282f7a2b51f2e8f9a8a3a38d4c0c56b30a54",
+				"dweb:/ipfs/QmZiwgSMzsJ93QDsW34NRfiYfoByz33pZekpMzoZy8XwiM"
+			]
+		},
+		"contracts/utilities/Events.sol": {
+			"keccak256": "0x0da2feb2109b6ac5ea8034c8bdd74a00d4ae5f29197518a6bf087e5f88c2849c",
+			"urls": [
+				"bzz-raw://9fc6e51a65c6aad1411d76aeee0daa7ef061d9d560e77ee8949182c6b9eafadb",
+				"dweb:/ipfs/QmfRFV4HJaT2aGqhJCtgFfDdYXQmH2ExYgqKGNNVAM3QRK"
+			]
+		},
+		"contracts/utilities/FullMath.sol": {
+			"keccak256": "0xb47046f42b7cc4327a943057d3ce37f00f9d0b48ceb5aacc9577f25f6955a2f3",
+			"urls": [
+				"bzz-raw://bfc35e12f74b288e0cfbf5bcd2ec338b61e5e26ab42becb1661dbe845f756fc5",
+				"dweb:/ipfs/QmZZt6frpfdPYzBuczYxZ5uq7i4hRRvXPyGuvbZR8ikes4"
+			]
+		},
+		"contracts/utilities/Index.sol": {
+			"keccak256": "0xe99414eb334a6b2da597ee6aec242fa323944f3b2b5bae83ad0740c4b449ed34",
+			"urls": [
+				"bzz-raw://c1efa3413bbe741a7d987ec119ce402e880a8edc002aa96edd0ecfe7c4dd2a6b",
+				"dweb:/ipfs/QmeHanderkFFRHz2Ted1uxqPiBk4v7V5pBUND7iSuiXq2w"
+			]
+		},
+		"contracts/utilities/Integral.sol": {
+			"keccak256": "0xca3cb8eee1c209390efffa7d75c69ef0448be438e60b479f058ab6b490128454",
+			"urls": [
+				"bzz-raw://fa4d99b1a731c5954f33f07b9aecb5fcb33baaf5a2cf695f967e4e99b3cd28fb",
+				"dweb:/ipfs/QmNwV6esUQj9nfjfYdLSyWwJrnQpWufJvsDWj7EpfCewGr"
+			]
+		},
+		"contracts/utilities/Interval.sol": {
+			"keccak256": "0x5512db722f9383d461f340f523646f9490c5df04d345a3112fe74370dad91d4d",
+			"urls": [
+				"bzz-raw://085beaafa42f8793944ffcd2fb97c51d100979af93e6898fc988d913c09df4c1",
+				"dweb:/ipfs/QmVZvr822BTmn6W9FPeG1fMQeV92DboHxDpPyav7oxEHrg"
+			]
+		},
+		"contracts/utilities/Kernel.sol": {
+			"keccak256": "0x93aac0b83f12c8076f0cd938f65a53c29dca8fdfd90d8df5f1895014b0f7b15e",
+			"urls": [
+				"bzz-raw://b33a13bd236b6304154d161e988cb8882130a04d2f3af3bc6d71ebe8a45dd06b",
+				"dweb:/ipfs/QmQXximoDcMEV13Em5CSw886GBLxh75ySdPoPEu5ULVrV2"
+			]
+		},
+		"contracts/utilities/KernelCompact.sol": {
+			"keccak256": "0x19335c3cadb3e646df9c0f4384b15b146a972bed40eb7f8a4175855d9e816f66",
+			"urls": [
+				"bzz-raw://50c689b5cf7062e9e199ea7f212d3d6a66baefcf7b1e90c3e55a5937870c13ec",
+				"dweb:/ipfs/QmQLnbMrC1zoAvQpyeeiKuWSFiimRQTPYg3Y4MkJVbcxpC"
+			]
+		},
+		"contracts/utilities/Memory.sol": {
+			"keccak256": "0xc16382587e85f35f3bdc21a009764f6f5e4605b3c2245b3b56bec80ea372a8d0",
+			"urls": [
+				"bzz-raw://53773f45afa57321118da40f138048b9779fcbff6ff6d5deb2700d4206d344c3",
+				"dweb:/ipfs/QmdtvtCUH5ayZiGgWa6hiARSNapi4dLA3vTWsJxBfZb5aB"
+			]
+		},
+		"contracts/utilities/PoolId.sol": {
+			"keccak256": "0xa4d9eede61a8316a5359dcd9b7ebed969f8af5c68045e8dac54db128f57b3b63",
+			"urls": [
+				"bzz-raw://800b70128c87b73f6eaf5ae160995789f2b492c318739d9092a68f6dfaab1d08",
+				"dweb:/ipfs/Qmf8QSbZb3fPAB5VivDF8j15SukfvherZ3BS22tmgDFaWo"
+			]
+		},
+		"contracts/utilities/Price.sol": {
+			"keccak256": "0x546a3ea19e34120fbe84b491f35f24a4f6c368e70c97d7596a5b73b01f282aca",
+			"urls": [
+				"bzz-raw://7925b4cdeaad6f4bd5e8221cb72d1689bb11e6a7cbcf7967436a6e161ba2f0e9",
+				"dweb:/ipfs/QmVCFKPCSvh6tsRwjdDMjxNJrcVw19acQF9k9kMpTXwND7"
+			]
+		},
+		"contracts/utilities/SentinelCalls.sol": {
+			"keccak256": "0xe272cff4b41adbb8420b51d3848652e48a787e42e73700bc5b3d59312352dd55",
+			"urls": [
+				"bzz-raw://ca790ad843720972091405d0f59cb9643c382b53471750dcbf2e4cc5ba77e068",
+				"dweb:/ipfs/QmcppwyeV4Np7SFJaa9po6czg5CQJGHCyEuPtkzPpEmbHC"
+			]
+		},
+		"contracts/utilities/Storage.sol": {
+			"keccak256": "0x2751f33d0fa51248aa559a14dc92fc15b731712ea6d910723ddebb814ccdeb34",
+			"urls": [
+				"bzz-raw://b9e1e9f6ee58e06d0c02bec044cdef7648df00adeacb0101d9d59d8d874d2759",
+				"dweb:/ipfs/QmdfrSGkeWBVnBtacu47iLs8Mu4FkLUP5EYPaSUn4jgEi4"
+			]
+		},
+		"contracts/utilities/Tag.sol": {
+			"keccak256": "0xd85de5cec21e2865ff3a9cbb342967eacb501b20f805eff5e55c1ae19340b192",
+			"urls": [
+				"bzz-raw://f39242740b17eff63c25b99e9c32d379e2ecc2f03459ae21495ef254e5a9c259",
+				"dweb:/ipfs/QmNcPTEXdo1MJd3e56FAePqqw4K1zXJkGMSB96C6Fq7bHh"
+			]
+		},
+		"contracts/utilities/X111.sol": {
+			"keccak256": "0x5d98223e7e4fd5632a669b305db2878a304cbf00d4d1f1f6af42b0e8eb309110",
+			"urls": [
+				"bzz-raw://df74f60c6f9d6de6d689dd86b4c5272d770f1fe2a735c1884cc6205ee3af4b9f",
+				"dweb:/ipfs/QmbudMCcbfNnisSENLvz6pGpb5DrBUdhjwWs7W1w3NWMtv"
+			]
+		},
+		"contracts/utilities/X127.sol": {
+			"keccak256": "0xb65c4f1da0c835d48669e6670e290edf80d25996d4a90001aa554d9cafb65ac9",
+			"urls": [
+				"bzz-raw://39ec75ea7af81131ed8efd1e5b05946a0737e9ae6fd16b8b8b1235e78bfdd4c9",
+				"dweb:/ipfs/QmWWHXuWmZ8WmUeH8SNpD2r3ZbVU3EL1JR8iKbz6AWJ7wC"
+			]
+		},
+		"contracts/utilities/X15.sol": {
+			"keccak256": "0x5e486d1019c72ba1b7a1bd6b4c63f7c90b14fd9ba34a324522ed1be2a7e4e7d8",
+			"urls": [
+				"bzz-raw://05d9f2ecccce7357221507c53464fc1418d834d1fff577df546c375690464a53",
+				"dweb:/ipfs/QmbLMPfXqmDUXURc58oj4ZSK685fMunWoh7aw8gx2qRaQf"
+			]
+		},
+		"contracts/utilities/X208.sol": {
+			"keccak256": "0x58317cb94ee61accfb478ad318146b4104f8625885981a788d6fa902e61a76ff",
+			"urls": [
+				"bzz-raw://54e653fde7c3ebe7ebf579efda9532048e37bd7fc56fd9093adaade62687acfd",
+				"dweb:/ipfs/QmSNFkLrgUikNLL2cnAWmjFDyovY9xhDrq2R1EFvfX6rXL"
+			]
+		},
+		"contracts/utilities/X216.sol": {
+			"keccak256": "0x9f52ae6db0705778b48f5cad813a6ac24cac3545308c70cb6944d6a60c9b5304",
+			"urls": [
+				"bzz-raw://c4c3a77b6a95f0e8b6226c815d15707867db3eb48c8116bed4a7fe40d69d66db",
+				"dweb:/ipfs/QmS8kdbTAhZc4urjTonjzKh2MwBniV9SpdBx9e9t4r2KKo"
+			]
+		},
+		"contracts/utilities/X23.sol": {
+			"keccak256": "0x913d07af1ba038531f067ff271294f156298efefa25576794f0966dd7f89572f",
+			"urls": [
+				"bzz-raw://73d48f7b80fa0ba0457ab0eb7547f78a68abb4f85e4abb00ed463656dc40b0a0",
+				"dweb:/ipfs/QmeA9EgfBhcsmKsA488iArDNJWTxTWFSXo9DodccjtLh1q"
+			]
+		},
+		"contracts/utilities/X47.sol": {
+			"keccak256": "0x152e9132adce8735b5c41a2925cc2ae2bc206a04f825563f2d59ca5eab62cc36",
+			"urls": [
+				"bzz-raw://a713197db57e436a1ee81331df067c9c1db1cd2a92cebf0c15eb97764cf52c41",
+				"dweb:/ipfs/QmZJaBzLvmSxVdP9nuj7annUCNnuC3y8MJ6ZgP4jnRF2DF"
+			]
+		},
+		"contracts/utilities/X59.sol": {
+			"keccak256": "0xce3f9b46206c5573e7538e07f73faef41568238b49ea9210de42a6eec67a72a9",
+			"urls": [
+				"bzz-raw://301a653c2683a3c888ab3d430e26f76f552c869f4453850f75892f289d80f2eb",
+				"dweb:/ipfs/QmXa8MdDDvJmRD2Mw1nnJGLf92JaG7uSjMxHtAsMnw1Uyv"
+			]
+		},
+		"contracts/utilities/X74.sol": {
+			"keccak256": "0x2945fe87dcae02ce66e3827bbc6daa47d8bec487fff1b8329f9696011fa2c761",
+			"urls": [
+				"bzz-raw://921a3a36dfe4f9c539eefc09fcb62186b84d8625f1c2537658f07c5057606903",
+				"dweb:/ipfs/QmcjiuVVzMkG138mxmkydE5261k74uvU1u1HyLA87d9DG8"
+			]
+		},
+		"echidna/FuzzUtilities.sol": {
+			"keccak256": "0x80a8d265699f634ccb2b3451451a84c0b24ee6c13d57537caa819a3c0bcc0008",
+			"urls": [
+				"bzz-raw://1e6c38eab4e261054568a16fe7f34568e55a1d03f7b6865225e158eda3f51c27",
+				"dweb:/ipfs/QmU759xAgpyfXgt1abdjoQmBMcDErsNLrhRumNp3pFK6aR"
+			]
+		}
+	},
+	"version": 1
+}

@@ -407,7 +407,7 @@ def test_readModifyPositionInputInvalidLogPrices(wrapper, poolId, qMin, qMax, sh
     logPriceMin = qMin + (qOffset * (1 << 59)) - (1 << 63)
     logPriceMax = qMax + (qOffset * (1 << 59)) - (1 << 63)
     
-    hookDataBytes = encode(['uint256'] * (hookDataByteCount + 1), [hookDataByteCount] + [content] * hookDataByteCount)[0 : hookDataByteCount + 32]
+    hookDataBytes = encode([bytes('uint256')] * (hookDataByteCount + 1), [hookDataByteCount] + [content] * hookDataByteCount)[0 : hookDataByteCount + 32]
 
     gap = 100
 
