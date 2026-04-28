@@ -1,0 +1,201 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "X59",
+						"name": "_val",
+						"type": "int256"
+					}
+				],
+				"name": "compareExpInverse",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_val",
+						"type": "uint256"
+					}
+				],
+				"name": "exp_decay",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "X59",
+						"name": "_val",
+						"type": "int256"
+					}
+				],
+				"name": "exp_inverse",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"exp_analysis/expInverseAnalysis.sol": "expInverseAnalysis"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/utilities/Errors.sol": {
+			"keccak256": "0xd47ce724fc7d199103fb63666bcf72554065692c0f6d42344fb00741834b37e3",
+			"urls": [
+				"bzz-raw://f974d049bd190aa70b1145ecf0e6282f7a2b51f2e8f9a8a3a38d4c0c56b30a54",
+				"dweb:/ipfs/QmZiwgSMzsJ93QDsW34NRfiYfoByz33pZekpMzoZy8XwiM"
+			]
+		},
+		"contracts/utilities/FullMath.sol": {
+			"keccak256": "0xb47046f42b7cc4327a943057d3ce37f00f9d0b48ceb5aacc9577f25f6955a2f3",
+			"urls": [
+				"bzz-raw://bfc35e12f74b288e0cfbf5bcd2ec338b61e5e26ab42becb1661dbe845f756fc5",
+				"dweb:/ipfs/QmZZt6frpfdPYzBuczYxZ5uq7i4hRRvXPyGuvbZR8ikes4"
+			]
+		},
+		"contracts/utilities/Index.sol": {
+			"keccak256": "0xe99414eb334a6b2da597ee6aec242fa323944f3b2b5bae83ad0740c4b449ed34",
+			"urls": [
+				"bzz-raw://c1efa3413bbe741a7d987ec119ce402e880a8edc002aa96edd0ecfe7c4dd2a6b",
+				"dweb:/ipfs/QmeHanderkFFRHz2Ted1uxqPiBk4v7V5pBUND7iSuiXq2w"
+			]
+		},
+		"contracts/utilities/Tag.sol": {
+			"keccak256": "0xd85de5cec21e2865ff3a9cbb342967eacb501b20f805eff5e55c1ae19340b192",
+			"urls": [
+				"bzz-raw://f39242740b17eff63c25b99e9c32d379e2ecc2f03459ae21495ef254e5a9c259",
+				"dweb:/ipfs/QmNcPTEXdo1MJd3e56FAePqqw4K1zXJkGMSB96C6Fq7bHh"
+			]
+		},
+		"contracts/utilities/X111.sol": {
+			"keccak256": "0x5d98223e7e4fd5632a669b305db2878a304cbf00d4d1f1f6af42b0e8eb309110",
+			"urls": [
+				"bzz-raw://df74f60c6f9d6de6d689dd86b4c5272d770f1fe2a735c1884cc6205ee3af4b9f",
+				"dweb:/ipfs/QmbudMCcbfNnisSENLvz6pGpb5DrBUdhjwWs7W1w3NWMtv"
+			]
+		},
+		"contracts/utilities/X127.sol": {
+			"keccak256": "0xb65c4f1da0c835d48669e6670e290edf80d25996d4a90001aa554d9cafb65ac9",
+			"urls": [
+				"bzz-raw://39ec75ea7af81131ed8efd1e5b05946a0737e9ae6fd16b8b8b1235e78bfdd4c9",
+				"dweb:/ipfs/QmWWHXuWmZ8WmUeH8SNpD2r3ZbVU3EL1JR8iKbz6AWJ7wC"
+			]
+		},
+		"contracts/utilities/X15.sol": {
+			"keccak256": "0x5e486d1019c72ba1b7a1bd6b4c63f7c90b14fd9ba34a324522ed1be2a7e4e7d8",
+			"urls": [
+				"bzz-raw://05d9f2ecccce7357221507c53464fc1418d834d1fff577df546c375690464a53",
+				"dweb:/ipfs/QmbLMPfXqmDUXURc58oj4ZSK685fMunWoh7aw8gx2qRaQf"
+			]
+		},
+		"contracts/utilities/X208.sol": {
+			"keccak256": "0x58317cb94ee61accfb478ad318146b4104f8625885981a788d6fa902e61a76ff",
+			"urls": [
+				"bzz-raw://54e653fde7c3ebe7ebf579efda9532048e37bd7fc56fd9093adaade62687acfd",
+				"dweb:/ipfs/QmSNFkLrgUikNLL2cnAWmjFDyovY9xhDrq2R1EFvfX6rXL"
+			]
+		},
+		"contracts/utilities/X216.sol": {
+			"keccak256": "0x9f52ae6db0705778b48f5cad813a6ac24cac3545308c70cb6944d6a60c9b5304",
+			"urls": [
+				"bzz-raw://c4c3a77b6a95f0e8b6226c815d15707867db3eb48c8116bed4a7fe40d69d66db",
+				"dweb:/ipfs/QmS8kdbTAhZc4urjTonjzKh2MwBniV9SpdBx9e9t4r2KKo"
+			]
+		},
+		"contracts/utilities/X23.sol": {
+			"keccak256": "0x913d07af1ba038531f067ff271294f156298efefa25576794f0966dd7f89572f",
+			"urls": [
+				"bzz-raw://73d48f7b80fa0ba0457ab0eb7547f78a68abb4f85e4abb00ed463656dc40b0a0",
+				"dweb:/ipfs/QmeA9EgfBhcsmKsA488iArDNJWTxTWFSXo9DodccjtLh1q"
+			]
+		},
+		"contracts/utilities/X47.sol": {
+			"keccak256": "0x152e9132adce8735b5c41a2925cc2ae2bc206a04f825563f2d59ca5eab62cc36",
+			"urls": [
+				"bzz-raw://a713197db57e436a1ee81331df067c9c1db1cd2a92cebf0c15eb97764cf52c41",
+				"dweb:/ipfs/QmZJaBzLvmSxVdP9nuj7annUCNnuC3y8MJ6ZgP4jnRF2DF"
+			]
+		},
+		"contracts/utilities/X59.sol": {
+			"keccak256": "0xce3f9b46206c5573e7538e07f73faef41568238b49ea9210de42a6eec67a72a9",
+			"urls": [
+				"bzz-raw://301a653c2683a3c888ab3d430e26f76f552c869f4453850f75892f289d80f2eb",
+				"dweb:/ipfs/QmXa8MdDDvJmRD2Mw1nnJGLf92JaG7uSjMxHtAsMnw1Uyv"
+			]
+		},
+		"contracts/utilities/X74.sol": {
+			"keccak256": "0x2945fe87dcae02ce66e3827bbc6daa47d8bec487fff1b8329f9696011fa2c761",
+			"urls": [
+				"bzz-raw://921a3a36dfe4f9c539eefc09fcb62186b84d8625f1c2537658f07c5057606903",
+				"dweb:/ipfs/QmcjiuVVzMkG138mxmkydE5261k74uvU1u1HyLA87d9DG8"
+			]
+		},
+		"exp_analysis/expInverseAnalysis.sol": {
+			"keccak256": "0x9f02a6d405a379c27fcb7a869cb3c6e12c456a458e31607ca955882407a9a184",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1879cff700ab5bdc633891ef3bfa623f930429af95f00000c961406d0973ef74",
+				"dweb:/ipfs/QmfBXXsFgVNiZQjsuirvuqKKUNebuKEyu2bU2JompbjRyE"
+			]
+		},
+		"exp_analysis/ground_truth.sol": {
+			"keccak256": "0x60f41dc019f9c8579c78fb76c2d488aeac8ec50c34e140815440c6ef8e332422",
+			"urls": [
+				"bzz-raw://d4f2ccf7fe5a344fea92d743c1a4334527d4c0ffd2b70a45514e93ac6d7233b8",
+				"dweb:/ipfs/QmQqHrotshM9zH67HedUMHmdrJJ7obZvHratGzvC9dfDMr"
+			]
+		}
+	},
+	"version": 1
+}

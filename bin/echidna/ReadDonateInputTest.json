@@ -1,0 +1,66 @@
+{
+    "contractName": "ReadDonateInputTest",
+    "abi": [],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.34+commit.80d5c536\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadDonateInputTest.sol\":\"ReadDonateInputTest\"},\"evmVersion\":\"osaka\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadDonateInputTest.sol\":{\"keccak256\":\"0x6f40c767f5242a6a3b723f435c5e64a76abaf409012220308f3a54ea0c602150\",\"urls\":[\"bzz-raw://4fb2cd7122942076fb067b1bd55d830c2e59f8b8d3869a36ed26900a344f408d\",\"dweb:/ipfs/QmNtTtaYyDfEfEFnUAV7yVfQiJfPtkcsLExEJywib2p6yF\"]}},\"version\":1}",
+    "bytecode": "608080604052346013576039908160188239f35b5f80fdfe5f80fdfea26469706673582212203bfe26a2b1ab24bedf626634f3428920a73a527ba1b1f84d0b23c3f60c628a5764736f6c63430008220033",
+    "deployedBytecode": "5f80fdfea26469706673582212203bfe26a2b1ab24bedf626634f3428920a73a527ba1b1f84d0b23c3f60c628a5764736f6c63430008220033",
+    "sourceMap": "82:38:0:-:0;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "82:38:0:-:0;;",
+    "sourcePath": "/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadDonateInputTest.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.34+commit.80d5c536"
+    },
+    "ast": {
+        "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadDonateInputTest.sol",
+        "exportedSymbols": {
+            "ReadDonateInputTest": [
+                2
+            ]
+        },
+        "id": 3,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".34"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "56:24:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "ReadDonateInputTest",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 2,
+                "linearizedBaseContracts": [
+                    2
+                ],
+                "name": "ReadDonateInputTest",
+                "nameLocation": "91:19:0",
+                "nodeType": "ContractDefinition",
+                "nodes": [],
+                "scope": 3,
+                "src": "82:38:0",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "56:64:0"
+    },
+    "functionHashes": {},
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "11400",
+            "executionCost": "69",
+            "totalCost": "11469"
+        }
+    }
+}

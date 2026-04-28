@@ -1,0 +1,1 @@
+echidna echidna/ReadDonateInputTest.sol --config echidna.yml --contract ReadDonateInputTest

@@ -1,0 +1,1 @@
+echidna echidna/ReadInitializePositiveAssertionTest.sol --config echidna.yml --contract ReadInitializeFullPositiveTest
