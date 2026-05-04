@@ -1,1 +1,1 @@
-[]
+[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[{"internalType":"uint256","name":"poolIdSeed","type":"uint256"},{"internalType":"uint8","name":"offsetSeed","type":"uint8"},{"internalType":"uint256","name":"sharesSeed","type":"uint256"},{"internalType":"uint256","name":"hookDataByteSeed","type":"uint256"},{"internalType":"uint256","name":"gapSeed","type":"uint256"}],"name":"readDonateInput_test","outputs":[],"stateMutability":"nonpayable","type":"function"}]

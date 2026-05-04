@@ -1,0 +1,1 @@
+[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"inputs":[{"internalType":"uint256","name":"poolIdSeed","type":"uint256"},{"internalType":"uint8","name":"OffsetSeed","type":"uint8"}],"name":"readUpdateGrowthPortionInput_test","outputs":[],"stateMutability":"nonpayable","type":"function"}]

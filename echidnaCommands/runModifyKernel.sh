@@ -1,0 +1,1 @@
+echidna echidna/ReadModifyKernelInputTest.sol --config echidna.yml --contract ReadModifyKernelInputTest

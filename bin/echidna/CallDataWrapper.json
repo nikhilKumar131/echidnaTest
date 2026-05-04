@@ -1,0 +1,2071 @@
+{
+    "contractName": "CallDataWrapper",
+    "abi": [
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "hookDataByteCount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "HookDataTooLong",
+            "type": "error"
+        },
+        {
+            "inputs": [],
+            "name": "_readSwapInput",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.35+commit.47b9dedd\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"hookDataByteCount\",\"type\":\"uint256\"}],\"name\":\"HookDataTooLong\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"_readSwapInput\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"errors\":{\"HookDataTooLong(uint256)\":[{\"notice\":\"Thrown when the size of 'hookData' exceeds 'type(uint16).max'.\"}]},\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadSwapInputHookDataTest.sol\":\"CallDataWrapper\"},\"evmVersion\":\"osaka\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/home/nikhil/Desktop/one/assisment2026/core/contracts/interfaces/INofeeswap.sol\":{\"keccak256\":\"0xfef5fda9b1b5fa5c36ea5e880768f083651da7111e8a1094f2268a1a646be5e0\",\"urls\":[\"bzz-raw://e750625f7f479a970481f87d7364bd318cbd5328ad5b5555074423322cd9eb36\",\"dweb:/ipfs/QmUMi6gFuA8Xejm5ZmcWgwe5gGE1ecnEDhd7pVviAiE2PY\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/interfaces/ISentinel.sol\":{\"keccak256\":\"0x3d4b41ac7607fb097819da35d7b16bd3d7b1792d4c4b5487c4fd8c2e31cbd5cf\",\"urls\":[\"bzz-raw://b2616977e1c821bb64748f987d6d113c2b44664f8486da35ce17e7376c56bcf8\",\"dweb:/ipfs/QmXNEKi6X1nW85Eo2VT4tjN49iUaBZt5PwaaAEwpoK4nXj\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/interfaces/IStorageAccess.sol\":{\"keccak256\":\"0x7286e621bc6e6ea890a12c31143c52086c262b50bbd2de71adf7bdbf93a5fc47\",\"urls\":[\"bzz-raw://13eb8062ea0a70d29ca8067111d24d762f299a217144465beb0cee832e9568c7\",\"dweb:/ipfs/QmdpYCe4TtSbYvNaQPpyrpPkJMBb5CagRyumAT8secBRh1\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/interfaces/ITransientAccess.sol\":{\"keccak256\":\"0x5d416cff5a15960564f714d18824c0bbbefa29d05e6dfc5eee5f2e7c03d1ee09\",\"urls\":[\"bzz-raw://2acf1d6a189fc877c0973b7f8d79c53f6dc058691dde7a6ecdcca24d368c123d\",\"dweb:/ipfs/QmWJoqhQgfZVHg3M1mnWFBWmHBEnmsYPbetDBEXoBihn5N\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Calldata.sol\":{\"keccak256\":\"0x15e74985afb3f6ebb7a3f2171406bc33c76691ada6cf39ca83fc981e9c1b94a1\",\"urls\":[\"bzz-raw://c747a0e0d5336a955cb0e98baa0e6983d8c9a2ee087dba7d3d5ae0f4d14dc42d\",\"dweb:/ipfs/QmXw81WwhjrZG7gbxaZHrqHs1MhbacinoH4DSnk1oVFmbB\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Curve.sol\":{\"keccak256\":\"0x604099805e8ba7b822ba7291df8d107630a631a4182dfe4a79cc5c1e6b0b13fd\",\"urls\":[\"bzz-raw://f61309b7a4f83a4a7be2f4d53657e5db8fb3f745011a74f5bab6585fbc4265f4\",\"dweb:/ipfs/QmcvUKmXSSbiydxQmDiqCYaooGjNw96JLVjbcWXyGuGMk4\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Errors.sol\":{\"keccak256\":\"0xd47ce724fc7d199103fb63666bcf72554065692c0f6d42344fb00741834b37e3\",\"urls\":[\"bzz-raw://f974d049bd190aa70b1145ecf0e6282f7a2b51f2e8f9a8a3a38d4c0c56b30a54\",\"dweb:/ipfs/QmZiwgSMzsJ93QDsW34NRfiYfoByz33pZekpMzoZy8XwiM\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Events.sol\":{\"keccak256\":\"0x0da2feb2109b6ac5ea8034c8bdd74a00d4ae5f29197518a6bf087e5f88c2849c\",\"urls\":[\"bzz-raw://9fc6e51a65c6aad1411d76aeee0daa7ef061d9d560e77ee8949182c6b9eafadb\",\"dweb:/ipfs/QmfRFV4HJaT2aGqhJCtgFfDdYXQmH2ExYgqKGNNVAM3QRK\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/FullMath.sol\":{\"keccak256\":\"0xb47046f42b7cc4327a943057d3ce37f00f9d0b48ceb5aacc9577f25f6955a2f3\",\"urls\":[\"bzz-raw://bfc35e12f74b288e0cfbf5bcd2ec338b61e5e26ab42becb1661dbe845f756fc5\",\"dweb:/ipfs/QmZZt6frpfdPYzBuczYxZ5uq7i4hRRvXPyGuvbZR8ikes4\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Index.sol\":{\"keccak256\":\"0xe99414eb334a6b2da597ee6aec242fa323944f3b2b5bae83ad0740c4b449ed34\",\"urls\":[\"bzz-raw://c1efa3413bbe741a7d987ec119ce402e880a8edc002aa96edd0ecfe7c4dd2a6b\",\"dweb:/ipfs/QmeHanderkFFRHz2Ted1uxqPiBk4v7V5pBUND7iSuiXq2w\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Kernel.sol\":{\"keccak256\":\"0x93aac0b83f12c8076f0cd938f65a53c29dca8fdfd90d8df5f1895014b0f7b15e\",\"urls\":[\"bzz-raw://b33a13bd236b6304154d161e988cb8882130a04d2f3af3bc6d71ebe8a45dd06b\",\"dweb:/ipfs/QmQXximoDcMEV13Em5CSw886GBLxh75ySdPoPEu5ULVrV2\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/KernelCompact.sol\":{\"keccak256\":\"0x19335c3cadb3e646df9c0f4384b15b146a972bed40eb7f8a4175855d9e816f66\",\"urls\":[\"bzz-raw://50c689b5cf7062e9e199ea7f212d3d6a66baefcf7b1e90c3e55a5937870c13ec\",\"dweb:/ipfs/QmQLnbMrC1zoAvQpyeeiKuWSFiimRQTPYg3Y4MkJVbcxpC\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Memory.sol\":{\"keccak256\":\"0xc16382587e85f35f3bdc21a009764f6f5e4605b3c2245b3b56bec80ea372a8d0\",\"urls\":[\"bzz-raw://53773f45afa57321118da40f138048b9779fcbff6ff6d5deb2700d4206d344c3\",\"dweb:/ipfs/QmdtvtCUH5ayZiGgWa6hiARSNapi4dLA3vTWsJxBfZb5aB\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/PoolId.sol\":{\"keccak256\":\"0xa4d9eede61a8316a5359dcd9b7ebed969f8af5c68045e8dac54db128f57b3b63\",\"urls\":[\"bzz-raw://800b70128c87b73f6eaf5ae160995789f2b492c318739d9092a68f6dfaab1d08\",\"dweb:/ipfs/Qmf8QSbZb3fPAB5VivDF8j15SukfvherZ3BS22tmgDFaWo\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Price.sol\":{\"keccak256\":\"0x546a3ea19e34120fbe84b491f35f24a4f6c368e70c97d7596a5b73b01f282aca\",\"urls\":[\"bzz-raw://7925b4cdeaad6f4bd5e8221cb72d1689bb11e6a7cbcf7967436a6e161ba2f0e9\",\"dweb:/ipfs/QmVCFKPCSvh6tsRwjdDMjxNJrcVw19acQF9k9kMpTXwND7\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/SentinelCalls.sol\":{\"keccak256\":\"0xe272cff4b41adbb8420b51d3848652e48a787e42e73700bc5b3d59312352dd55\",\"urls\":[\"bzz-raw://ca790ad843720972091405d0f59cb9643c382b53471750dcbf2e4cc5ba77e068\",\"dweb:/ipfs/QmcppwyeV4Np7SFJaa9po6czg5CQJGHCyEuPtkzPpEmbHC\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Storage.sol\":{\"keccak256\":\"0x2751f33d0fa51248aa559a14dc92fc15b731712ea6d910723ddebb814ccdeb34\",\"urls\":[\"bzz-raw://b9e1e9f6ee58e06d0c02bec044cdef7648df00adeacb0101d9d59d8d874d2759\",\"dweb:/ipfs/QmdfrSGkeWBVnBtacu47iLs8Mu4FkLUP5EYPaSUn4jgEi4\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Tag.sol\":{\"keccak256\":\"0xd85de5cec21e2865ff3a9cbb342967eacb501b20f805eff5e55c1ae19340b192\",\"urls\":[\"bzz-raw://f39242740b17eff63c25b99e9c32d379e2ecc2f03459ae21495ef254e5a9c259\",\"dweb:/ipfs/QmNcPTEXdo1MJd3e56FAePqqw4K1zXJkGMSB96C6Fq7bHh\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X111.sol\":{\"keccak256\":\"0x5d98223e7e4fd5632a669b305db2878a304cbf00d4d1f1f6af42b0e8eb309110\",\"urls\":[\"bzz-raw://df74f60c6f9d6de6d689dd86b4c5272d770f1fe2a735c1884cc6205ee3af4b9f\",\"dweb:/ipfs/QmbudMCcbfNnisSENLvz6pGpb5DrBUdhjwWs7W1w3NWMtv\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X127.sol\":{\"keccak256\":\"0xb65c4f1da0c835d48669e6670e290edf80d25996d4a90001aa554d9cafb65ac9\",\"urls\":[\"bzz-raw://39ec75ea7af81131ed8efd1e5b05946a0737e9ae6fd16b8b8b1235e78bfdd4c9\",\"dweb:/ipfs/QmWWHXuWmZ8WmUeH8SNpD2r3ZbVU3EL1JR8iKbz6AWJ7wC\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X15.sol\":{\"keccak256\":\"0x5e486d1019c72ba1b7a1bd6b4c63f7c90b14fd9ba34a324522ed1be2a7e4e7d8\",\"urls\":[\"bzz-raw://05d9f2ecccce7357221507c53464fc1418d834d1fff577df546c375690464a53\",\"dweb:/ipfs/QmbLMPfXqmDUXURc58oj4ZSK685fMunWoh7aw8gx2qRaQf\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X208.sol\":{\"keccak256\":\"0x58317cb94ee61accfb478ad318146b4104f8625885981a788d6fa902e61a76ff\",\"urls\":[\"bzz-raw://54e653fde7c3ebe7ebf579efda9532048e37bd7fc56fd9093adaade62687acfd\",\"dweb:/ipfs/QmSNFkLrgUikNLL2cnAWmjFDyovY9xhDrq2R1EFvfX6rXL\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X216.sol\":{\"keccak256\":\"0x9f52ae6db0705778b48f5cad813a6ac24cac3545308c70cb6944d6a60c9b5304\",\"urls\":[\"bzz-raw://c4c3a77b6a95f0e8b6226c815d15707867db3eb48c8116bed4a7fe40d69d66db\",\"dweb:/ipfs/QmS8kdbTAhZc4urjTonjzKh2MwBniV9SpdBx9e9t4r2KKo\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X23.sol\":{\"keccak256\":\"0x913d07af1ba038531f067ff271294f156298efefa25576794f0966dd7f89572f\",\"urls\":[\"bzz-raw://73d48f7b80fa0ba0457ab0eb7547f78a68abb4f85e4abb00ed463656dc40b0a0\",\"dweb:/ipfs/QmeA9EgfBhcsmKsA488iArDNJWTxTWFSXo9DodccjtLh1q\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X47.sol\":{\"keccak256\":\"0x152e9132adce8735b5c41a2925cc2ae2bc206a04f825563f2d59ca5eab62cc36\",\"urls\":[\"bzz-raw://a713197db57e436a1ee81331df067c9c1db1cd2a92cebf0c15eb97764cf52c41\",\"dweb:/ipfs/QmZJaBzLvmSxVdP9nuj7annUCNnuC3y8MJ6ZgP4jnRF2DF\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X59.sol\":{\"keccak256\":\"0xce3f9b46206c5573e7538e07f73faef41568238b49ea9210de42a6eec67a72a9\",\"urls\":[\"bzz-raw://301a653c2683a3c888ab3d430e26f76f552c869f4453850f75892f289d80f2eb\",\"dweb:/ipfs/QmXa8MdDDvJmRD2Mw1nnJGLf92JaG7uSjMxHtAsMnw1Uyv\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X74.sol\":{\"keccak256\":\"0x2945fe87dcae02ce66e3827bbc6daa47d8bec487fff1b8329f9696011fa2c761\",\"urls\":[\"bzz-raw://921a3a36dfe4f9c539eefc09fcb62186b84d8625f1c2537658f07c5057606903\",\"dweb:/ipfs/QmcjiuVVzMkG138mxmkydE5261k74uvU1u1HyLA87d9DG8\"]},\"/home/nikhil/Desktop/one/assisment2026/core/echidna/CallDataUtility.sol\":{\"keccak256\":\"0xc882e5f023570bb5f597827cab2db9f42abfc2308cc191e71c3751019348a1f1\",\"urls\":[\"bzz-raw://4a5b94f2ea13acd1852c0ad4b9163111edd6414c8b9f1d6a7d1b2e24f369867d\",\"dweb:/ipfs/QmUEwgTwcdFUZkUCEo3NhVkPD5jdxXkUkH2dv4kFoLRxxW\"]},\"/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadSwapInputHookDataTest.sol\":{\"keccak256\":\"0xd8602836ef5edec8162d64a8e15f8099efcbee3a057d9408066cb52b963b1316\",\"urls\":[\"bzz-raw://d37799322d5568e2c4f55cb7e6af0a471bc62209acc2277b186c774077f58006\",\"dweb:/ipfs/QmZUieBjseVd3qcXWpsreo9L6aHqofeFE8psn9mSp3CU4P\"]}},\"version\":1}",
+    "bytecode": "608080604052346015576101af908161001a8239f35b5f80fdfe60806040526004361015610011575f80fd5b5f3560e01c63d28b2ce714610024575f80fd5b3461015b575f36600319011261015b576100483360d85160a01c9060601b1760c452565b61005360043560d852565b60243560026001607f1b0319811261014c575b60016001607f1b03811361013e575b607f1b6101085261008860443561012852565b60643560801c60016001607f1b038111610130575b6100b2906101085160801c9060801b1760f852565b60743560801c60028111610128575b610150536101266024608435806004013591829101610808376100e661080861062f52565b6100f58161ffff81111561015f565b61010f61ffff82166106555160101c9060f01b1761065352565b61011c610744820160a452565b610808016105ef52565b005b5060026100c1565b5060016001607f1b0361009d565b5060016001607f1b03610075565b5060026001607f1b0319610066565b5f80fd5b156101675750565b63805cfd4b60e01b5f5260045260245ffdfea26469706673582212207026b0bfa8cf9d46d8ab61ab7d8b0717561a827fe3b90e88d17ad0bea9eadb0f64736f6c63430008230033",
+    "deployedBytecode": "60806040526004361015610011575f80fd5b5f3560e01c63d28b2ce714610024575f80fd5b3461015b575f36600319011261015b576100483360d85160a01c9060601b1760c452565b61005360043560d852565b60243560026001607f1b0319811261014c575b60016001607f1b03811361013e575b607f1b6101085261008860443561012852565b60643560801c60016001607f1b038111610130575b6100b2906101085160801c9060801b1760f852565b60743560801c60028111610128575b610150536101266024608435806004013591829101610808376100e661080861062f52565b6100f58161ffff81111561015f565b61010f61ffff82166106555160101c9060f01b1761065352565b61011c610744820160a452565b610808016105ef52565b005b5060026100c1565b5060016001607f1b0361009d565b5060016001607f1b03610075565b5060026001607f1b0319610066565b5f80fd5b156101675750565b63805cfd4b60e01b5f5260045260245ffdfea26469706673582212207026b0bfa8cf9d46d8ab61ab7d8b0717561a827fe3b90e88d17ad0bea9eadb0f64736f6c63430008230033",
+    "sourceMap": "504:105:28:-:0;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "504:105:28:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;504:105:28;;;;22482:10:4;;228204:143:12;;;;;;;;;;228150:199;22482:10:4;22631:6;504:105:28;22574:44:4;228506:43:12;;228458:93;22631:6:4;22817:391;;-1:-1:-1;;;;;;22817:391:4;;;;504:105:28;-1:-1:-1;;;;;22817:391:4;;;;504:105:28;22817:391:4;;229132:61:12;;23409:13:4;23337:52;;229386:57:12;;229328:117;23409:13:4;23520:193;;504:105:28;23520:193:4;-1:-1:-1;;;;;23520:193:4;;;;504:105:28;23734:14:4;;228766:159:12;;;;;;;;;;228702:225;23734:14:4;23831:157;;504:105:28;23831:157:4;;;;;;504:105:28;23831:157:4;;25566:6;22817:391;24397:921;;;504:105:28;24397:921:4;;;;;;;;25335:8;24397:921;234987:47:12;;234935:101;25335:8:4;25350:100;25365:37;504:105:28;25365:37:4;;;25350:100;:::i;:::-;25477:25;504:105:28;;;235962:166:12;;;;;;;;;;235893:237;25477:25:4;25531:18;24397:921;;;228079:67:12;;228007:141;25531:18:4;24397:921;;234583:43:12;;234536:92;25566:6:4;504:105:28;23831:157:4;;;;;23520:193;-1:-1:-1;;;;;;23520:193:4;;22817:391;-1:-1:-1;;;;;;22817:391:4;;;-1:-1:-1;;;;;;;22817:391:4;;504:105:28;;;;;;;;;:::o;:::-;;;;;;;;;;",
+    "sourcePath": "/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadSwapInputHookDataTest.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.35+commit.47b9dedd"
+    },
+    "ast": {
+        "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadSwapInputHookDataTest.sol",
+        "exportedSymbols": {
+            "CallDataTestCommonUtilities": [
+                10156
+            ],
+            "CallDataWrapper": [
+                10332
+            ],
+            "Curve": [
+                1411
+            ],
+            "CurveLengthIsZero": [
+                1873
+            ],
+            "HookDataTooLong": [
+                2202
+            ],
+            "Index": [
+                3181
+            ],
+            "InvalidGrowthPortion": [
+                2102
+            ],
+            "InvalidNumberOfShares": [
+                2113
+            ],
+            "Kernel": [
+                3466
+            ],
+            "KernelCompact": [
+                3677
+            ],
+            "LogOffsetOutOfRange": [
+                2087
+            ],
+            "LogPriceOutOfRange": [
+                2108
+            ],
+            "PoolExists": [
+                2081
+            ],
+            "PoolIdCannotBeZero": [
+                2116
+            ],
+            "ReadSwapInputHookDataTest": [
+                10441
+            ],
+            "ReadSwapInputHookDataTestUtilities": [
+                10305
+            ],
+            "Tag": [
+                7179
+            ],
+            "TagsOutOfOrder": [
+                2096
+            ],
+            "X127": [
+                7645
+            ],
+            "X47": [
+                8983
+            ],
+            "X59": [
+                9174
+            ],
+            "_curve_": [
+                4221
+            ],
+            "_endOfStaticParams_": [
+                4302
+            ],
+            "_freeMemoryPointer_": [
+                4062
+            ],
+            "_hookDataByteCount_": [
+                4233
+            ],
+            "_hookData_": [
+                4224
+            ],
+            "_hookInputByteCount_": [
+                4074
+            ],
+            "_kernel_": [
+                4218
+            ],
+            "_poolGrowthPortion_": [
+                4290
+            ],
+            "_poolId_": [
+                4080
+            ],
+            "_shares_": [
+                4314
+            ],
+            "_swapInput_": [
+                4083
+            ],
+            "_zeroForOne_": [
+                4101
+            ],
+            "derivePoolId": [
+                5198
+            ],
+            "getDynamicParamsSlot": [
+                6710
+            ],
+            "getFreeMemoryPointer": [
+                4336
+            ],
+            "getHookInputByteCount": [
+                4364
+            ],
+            "getLogOffsetFromPoolId": [
+                5188
+            ],
+            "maxLogOffset": [
+                9293
+            ],
+            "minLogOffset": [
+                9284
+            ],
+            "oneX47": [
+                8999
+            ],
+            "readCollectInput": [
+                1382
+            ],
+            "readDonateInput": [
+                1118
+            ],
+            "readInitializeInput": [
+                810
+            ],
+            "readModifyKernelInput": [
+                1199
+            ],
+            "readModifyPoolGrowthPortionInput": [
+                1248
+            ],
+            "readModifyPositionInput": [
+                1014
+            ],
+            "readStorage": [
+                5665
+            ],
+            "readSwapInput": [
+                1365
+            ],
+            "readUpdateGrowthPortionsInput": [
+                1273
+            ],
+            "setAmountSpecified": [
+                4422
+            ],
+            "setCrossThreshold": [
+                4406
+            ],
+            "setCurve": [
+                4720
+            ],
+            "setFreeMemoryPointer": [
+                4343
+            ],
+            "setHookData": [
+                4734
+            ],
+            "setHookDataByteCount": [
+                4780
+            ],
+            "setHookInputByteCount": [
+                4371
+            ],
+            "setKernel": [
+                4704
+            ],
+            "setLogPriceLimit": [
+                4438
+            ],
+            "setLogPriceMax": [
+                5145
+            ],
+            "setLogPriceMaxOffsetted": [
+                5099
+            ],
+            "setLogPriceMin": [
+                5129
+            ],
+            "setLogPriceMinOffsetted": [
+                5083
+            ],
+            "setMsgSender": [
+                4378
+            ],
+            "setPoolGrowthPortion": [
+                5019
+            ],
+            "setPoolId": [
+                4392
+            ],
+            "setShares": [
+                5113
+            ],
+            "setSqrtInverseOffset": [
+                4957
+            ],
+            "setSqrtOffset": [
+                4941
+            ],
+            "setTag0": [
+                4909
+            ],
+            "setTag1": [
+                4925
+            ],
+            "sixteenX59": [
+                9237
+            ],
+            "thirtyTwoX59": [
+                9246
+            ],
+            "zeroX59": [
+                9185
+            ]
+        },
+        "id": 10442,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 10307,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".34"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "56:24:28"
+            },
+            {
+                "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Memory.sol",
+                "file": "../contracts/utilities/Memory.sol",
+                "id": 10320,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 10442,
+                "sourceUnit": 5174,
+                "src": "82:271:28",
+                "symbolAliases": [
+                    {
+                        "foreign": {
+                            "id": 10308,
+                            "name": "getFreeMemoryPointer",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4336,
+                            "src": "93:20:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10309,
+                            "name": "getHookInputByteCount",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4364,
+                            "src": "117:21:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10310,
+                            "name": "_poolId_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4080,
+                            "src": "142:8:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10311,
+                            "name": "_kernel_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4218,
+                            "src": "154:8:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10312,
+                            "name": "_shares_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4314,
+                            "src": "166:8:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10313,
+                            "name": "_curve_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4221,
+                            "src": "178:7:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10314,
+                            "name": "_poolGrowthPortion_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4290,
+                            "src": "187:19:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10315,
+                            "name": "_hookData_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4224,
+                            "src": "210:10:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10316,
+                            "name": "_hookDataByteCount_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4233,
+                            "src": "222:19:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10317,
+                            "name": "_hookInputByteCount_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4074,
+                            "src": "243:20:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10318,
+                            "name": "_freeMemoryPointer_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4062,
+                            "src": "267:19:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10319,
+                            "name": "_endOfStaticParams_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4302,
+                            "src": "290:19:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    }
+                ],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Calldata.sol",
+                "file": "../contracts/utilities/Calldata.sol",
+                "id": 10321,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 10442,
+                "sourceUnit": 1383,
+                "src": "355:45:28",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/echidna/CallDataUtility.sol",
+                "file": "./CallDataUtility.sol",
+                "id": 10324,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 10442,
+                "sourceUnit": 10306,
+                "src": "401:101:28",
+                "symbolAliases": [
+                    {
+                        "foreign": {
+                            "id": 10322,
+                            "name": "CallDataTestCommonUtilities",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10156,
+                            "src": "409:27:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 10323,
+                            "name": "ReadSwapInputHookDataTestUtilities",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 10305,
+                            "src": "437:34:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    }
+                ],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "CallDataWrapper",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 10332,
+                "linearizedBaseContracts": [
+                    10332
+                ],
+                "name": "CallDataWrapper",
+                "nameLocation": "513:15:28",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 10330,
+                            "nodeType": "Block",
+                            "src": "581:25:28",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [],
+                                        "expression": {
+                                            "argumentTypes": [],
+                                            "id": 10327,
+                                            "name": "readSwapInput",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 1365,
+                                            "src": "586:13:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                                                "typeString": "function () view"
+                                            }
+                                        },
+                                        "id": 10328,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "586:15:28",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 10329,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "586:15:28"
+                                }
+                            ]
+                        },
+                        "functionSelector": "d28b2ce7",
+                        "id": 10331,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "_readSwapInput",
+                        "nameLocation": "557:14:28",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10325,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "571:2:28"
+                        },
+                        "returnParameters": {
+                            "id": 10326,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "581:0:28"
+                        },
+                        "scope": 10332,
+                        "src": "548:58:28",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 10442,
+                "src": "504:105:28",
+                "usedErrors": [
+                    2202
+                ],
+                "usedEvents": []
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "ReadSwapInputHookDataTest",
+                "contractDependencies": [
+                    10332
+                ],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 10441,
+                "linearizedBaseContracts": [
+                    10441
+                ],
+                "name": "ReadSwapInputHookDataTest",
+                "nameLocation": "620:25:28",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 10335,
+                        "mutability": "mutable",
+                        "name": "wrapper",
+                        "nameLocation": "691:7:28",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 10441,
+                        "src": "675:23:28",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                            "typeString": "contract CallDataWrapper"
+                        },
+                        "typeName": {
+                            "id": 10334,
+                            "nodeType": "UserDefinedTypeName",
+                            "pathNode": {
+                                "id": 10333,
+                                "name": "CallDataWrapper",
+                                "nameLocations": [
+                                    "675:15:28"
+                                ],
+                                "nodeType": "IdentifierPath",
+                                "referencedDeclaration": 10332,
+                                "src": "675:15:28"
+                            },
+                            "referencedDeclaration": 10332,
+                            "src": "675:15:28",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                                "typeString": "contract CallDataWrapper"
+                            }
+                        },
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 10345,
+                            "nodeType": "Block",
+                            "src": "718:46:28",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "id": 10343,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 10338,
+                                            "name": "wrapper",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 10335,
+                                            "src": "726:7:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                                                "typeString": "contract CallDataWrapper"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [],
+                                            "expression": {
+                                                "argumentTypes": [],
+                                                "id": 10341,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "NewExpression",
+                                                "src": "736:19:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_CallDataWrapper_$10332_$",
+                                                    "typeString": "function () returns (contract CallDataWrapper)"
+                                                },
+                                                "typeName": {
+                                                    "id": 10340,
+                                                    "nodeType": "UserDefinedTypeName",
+                                                    "pathNode": {
+                                                        "id": 10339,
+                                                        "name": "CallDataWrapper",
+                                                        "nameLocations": [
+                                                            "740:15:28"
+                                                        ],
+                                                        "nodeType": "IdentifierPath",
+                                                        "referencedDeclaration": 10332,
+                                                        "src": "740:15:28"
+                                                    },
+                                                    "referencedDeclaration": 10332,
+                                                    "src": "740:15:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                                                        "typeString": "contract CallDataWrapper"
+                                                    }
+                                                }
+                                            },
+                                            "id": 10342,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "functionCall",
+                                            "lValueRequested": false,
+                                            "nameLocations": [],
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "736:21:28",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                                                "typeString": "contract CallDataWrapper"
+                                            }
+                                        },
+                                        "src": "726:31:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                                            "typeString": "contract CallDataWrapper"
+                                        }
+                                    },
+                                    "id": 10344,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "726:31:28"
+                                }
+                            ]
+                        },
+                        "id": 10346,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nameLocation": "-1:-1:-1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10336,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "716:2:28"
+                        },
+                        "returnParameters": {
+                            "id": 10337,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "718:0:28"
+                        },
+                        "scope": 10441,
+                        "src": "705:59:28",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 10439,
+                            "nodeType": "Block",
+                            "src": "1080:876:28",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        10369
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10369,
+                                            "mutability": "mutable",
+                                            "name": "GeneratedValues",
+                                            "nameLocation": "1175:15:28",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10439,
+                                            "src": "1117:73:28",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues"
+                                            },
+                                            "typeName": {
+                                                "id": 10368,
+                                                "nodeType": "UserDefinedTypeName",
+                                                "pathNode": {
+                                                    "id": 10367,
+                                                    "name": "ReadSwapInputHookDataTestUtilities.generatedValues",
+                                                    "nameLocations": [
+                                                        "1117:34:28",
+                                                        "1152:15:28"
+                                                    ],
+                                                    "nodeType": "IdentifierPath",
+                                                    "referencedDeclaration": 10226,
+                                                    "src": "1117:50:28"
+                                                },
+                                                "referencedDeclaration": 10226,
+                                                "src": "1117:50:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_generatedValues_$10226_storage_ptr",
+                                                    "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 10370,
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "1117:73:28"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 10383,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 10371,
+                                            "name": "GeneratedValues",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 10369,
+                                            "src": "1205:15:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "id": 10374,
+                                                    "name": "poolIdSeed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10348,
+                                                    "src": "1273:10:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 10375,
+                                                    "name": "offSetSeed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10350,
+                                                    "src": "1285:10:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint8",
+                                                        "typeString": "uint8"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 10376,
+                                                    "name": "amountSeed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10352,
+                                                    "src": "1297:10:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_int128",
+                                                        "typeString": "int128"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 10377,
+                                                    "name": "qLimitSeed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10354,
+                                                    "src": "1309:10:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_int256",
+                                                        "typeString": "int256"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 10378,
+                                                    "name": "crossThresholdSeed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10356,
+                                                    "src": "1321:18:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint128",
+                                                        "typeString": "uint128"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 10379,
+                                                    "name": "zeroForOneSeed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10358,
+                                                    "src": "1341:14:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint8",
+                                                        "typeString": "uint8"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 10380,
+                                                    "name": "hookDataByteCountSeed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10360,
+                                                    "src": "1357:21:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 10381,
+                                                    "name": "gapSeed",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10362,
+                                                    "src": "1380:7:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint8",
+                                                        "typeString": "uint8"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_int128",
+                                                        "typeString": "int128"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_int256",
+                                                        "typeString": "int256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint128",
+                                                        "typeString": "uint128"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint8",
+                                                        "typeString": "uint8"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "id": 10372,
+                                                    "name": "ReadSwapInputHookDataTestUtilities",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10305,
+                                                    "src": "1223:34:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_type$_t_contract$_ReadSwapInputHookDataTestUtilities_$10305_$",
+                                                        "typeString": "type(library ReadSwapInputHookDataTestUtilities)"
+                                                    }
+                                                },
+                                                "id": 10373,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberLocation": "1258:14:28",
+                                                "memberName": "generateValues",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": 10304,
+                                                "src": "1223:49:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint8_$_t_int128_$_t_int256_$_t_uint128_$_t_uint8_$_t_uint256_$_t_uint256_$returns$_t_struct$_generatedValues_$10226_memory_ptr_$",
+                                                    "typeString": "function (uint256,uint8,int128,int256,uint128,uint8,uint256,uint256) pure returns (struct ReadSwapInputHookDataTestUtilities.generatedValues memory)"
+                                                }
+                                            },
+                                            "id": 10382,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "functionCall",
+                                            "lValueRequested": false,
+                                            "nameLocations": [],
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "1223:165:28",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                            }
+                                        },
+                                        "src": "1205:183:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                            "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                        }
+                                    },
+                                    "id": 10384,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1205:183:28"
+                                },
+                                {
+                                    "assignments": [
+                                        10386
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10386,
+                                            "mutability": "mutable",
+                                            "name": "startOfHookData",
+                                            "nameLocation": "1428:15:28",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10439,
+                                            "src": "1420:23:28",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 10385,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1420:7:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 10393,
+                                    "initialValue": {
+                                        "commonType": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "id": 10392,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftExpression": {
+                                            "commonType": {
+                                                "typeIdentifier": "t_rational_160_by_1",
+                                                "typeString": "int_const 160"
+                                            },
+                                            "id": 10389,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "lValueRequested": false,
+                                            "leftExpression": {
+                                                "hexValue": "35",
+                                                "id": 10387,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "1446:1:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_5_by_1",
+                                                    "typeString": "int_const 5"
+                                                },
+                                                "value": "5"
+                                            },
+                                            "nodeType": "BinaryOperation",
+                                            "operator": "*",
+                                            "rightExpression": {
+                                                "hexValue": "3332",
+                                                "id": 10388,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "1448:2:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_32_by_1",
+                                                    "typeString": "int_const 32"
+                                                },
+                                                "value": "32"
+                                            },
+                                            "src": "1446:4:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_160_by_1",
+                                                "typeString": "int_const 160"
+                                            }
+                                        },
+                                        "nodeType": "BinaryOperation",
+                                        "operator": "+",
+                                        "rightExpression": {
+                                            "expression": {
+                                                "id": 10390,
+                                                "name": "GeneratedValues",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 10369,
+                                                "src": "1453:15:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                    "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                                }
+                                            },
+                                            "id": 10391,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "1469:3:28",
+                                            "memberName": "gap",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 10225,
+                                            "src": "1453:19:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1446:26:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "1420:52:28"
+                                },
+                                {
+                                    "assignments": [
+                                        10395
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10395,
+                                            "mutability": "mutable",
+                                            "name": "payload",
+                                            "nameLocation": "1497:7:28",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10439,
+                                            "src": "1484:20:28",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bytes_memory_ptr",
+                                                "typeString": "bytes"
+                                            },
+                                            "typeName": {
+                                                "id": 10394,
+                                                "name": "bytes",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1484:5:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes_storage_ptr",
+                                                    "typeString": "bytes"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 10396,
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "1484:20:28"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 10423,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "id": 10397,
+                                            "name": "payload",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 10395,
+                                            "src": "1510:7:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bytes_memory_ptr",
+                                                "typeString": "bytes memory"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "arguments": [
+                                                {
+                                                    "expression": {
+                                                        "expression": {
+                                                            "id": 10400,
+                                                            "name": "wrapper",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 10335,
+                                                            "src": "1543:7:28",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                                                                "typeString": "contract CallDataWrapper"
+                                                            }
+                                                        },
+                                                        "id": 10401,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberLocation": "1551:14:28",
+                                                        "memberName": "_readSwapInput",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": 10331,
+                                                        "src": "1543:22:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                                                            "typeString": "function () external"
+                                                        }
+                                                    },
+                                                    "id": 10402,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberLocation": "1566:8:28",
+                                                    "memberName": "selector",
+                                                    "nodeType": "MemberAccess",
+                                                    "src": "1543:31:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bytes4",
+                                                        "typeString": "bytes4"
+                                                    }
+                                                },
+                                                {
+                                                    "expression": {
+                                                        "id": 10403,
+                                                        "name": "GeneratedValues",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 10369,
+                                                        "src": "1581:15:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                            "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                                        }
+                                                    },
+                                                    "id": 10404,
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberLocation": "1597:6:28",
+                                                    "memberName": "poolId",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 10213,
+                                                    "src": "1581:22:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                {
+                                                    "expression": {
+                                                        "id": 10405,
+                                                        "name": "GeneratedValues",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 10369,
+                                                        "src": "1610:15:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                            "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                                        }
+                                                    },
+                                                    "id": 10406,
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberLocation": "1626:15:28",
+                                                    "memberName": "amountSpecified",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 10215,
+                                                    "src": "1610:31:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_int128",
+                                                        "typeString": "int128"
+                                                    }
+                                                },
+                                                {
+                                                    "expression": {
+                                                        "id": 10407,
+                                                        "name": "GeneratedValues",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 10369,
+                                                        "src": "1648:15:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                            "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                                        }
+                                                    },
+                                                    "id": 10408,
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberLocation": "1664:13:28",
+                                                    "memberName": "logPriceLimit",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 10217,
+                                                    "src": "1648:29:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_int256",
+                                                        "typeString": "int256"
+                                                    }
+                                                },
+                                                {
+                                                    "commonType": {
+                                                        "typeIdentifier": "t_uint128",
+                                                        "typeString": "uint128"
+                                                    },
+                                                    "id": 10413,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "leftExpression": {
+                                                        "expression": {
+                                                            "id": 10409,
+                                                            "name": "GeneratedValues",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 10369,
+                                                            "src": "1684:15:28",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                                "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                                            }
+                                                        },
+                                                        "id": 10410,
+                                                        "isConstant": false,
+                                                        "isLValue": true,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberLocation": "1700:14:28",
+                                                        "memberName": "crossThreshold",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": 10219,
+                                                        "src": "1684:30:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint128",
+                                                            "typeString": "uint128"
+                                                        }
+                                                    },
+                                                    "nodeType": "BinaryOperation",
+                                                    "operator": "+",
+                                                    "rightExpression": {
+                                                        "expression": {
+                                                            "id": 10411,
+                                                            "name": "GeneratedValues",
+                                                            "nodeType": "Identifier",
+                                                            "overloadedDeclarations": [],
+                                                            "referencedDeclaration": 10369,
+                                                            "src": "1717:15:28",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                                "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                                            }
+                                                        },
+                                                        "id": 10412,
+                                                        "isConstant": false,
+                                                        "isLValue": true,
+                                                        "isPure": false,
+                                                        "lValueRequested": false,
+                                                        "memberLocation": "1733:10:28",
+                                                        "memberName": "zeroForOne",
+                                                        "nodeType": "MemberAccess",
+                                                        "referencedDeclaration": 10221,
+                                                        "src": "1717:26:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint8",
+                                                            "typeString": "uint8"
+                                                        }
+                                                    },
+                                                    "src": "1684:59:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint128",
+                                                        "typeString": "uint128"
+                                                    }
+                                                },
+                                                {
+                                                    "id": 10414,
+                                                    "name": "startOfHookData",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 10386,
+                                                    "src": "1750:15:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                {
+                                                    "arguments": [
+                                                        {
+                                                            "expression": {
+                                                                "id": 10417,
+                                                                "name": "GeneratedValues",
+                                                                "nodeType": "Identifier",
+                                                                "overloadedDeclarations": [],
+                                                                "referencedDeclaration": 10369,
+                                                                "src": "1782:15:28",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                                    "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                                                }
+                                                            },
+                                                            "id": 10418,
+                                                            "isConstant": false,
+                                                            "isLValue": true,
+                                                            "isPure": false,
+                                                            "lValueRequested": false,
+                                                            "memberLocation": "1798:3:28",
+                                                            "memberName": "gap",
+                                                            "nodeType": "MemberAccess",
+                                                            "referencedDeclaration": 10225,
+                                                            "src": "1782:19:28",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": [
+                                                            {
+                                                                "typeIdentifier": "t_uint256",
+                                                                "typeString": "uint256"
+                                                            }
+                                                        ],
+                                                        "id": 10416,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "lValueRequested": false,
+                                                        "nodeType": "NewExpression",
+                                                        "src": "1772:9:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_bytes_memory_ptr_$",
+                                                            "typeString": "function (uint256) pure returns (bytes memory)"
+                                                        },
+                                                        "typeName": {
+                                                            "id": 10415,
+                                                            "name": "bytes",
+                                                            "nodeType": "ElementaryTypeName",
+                                                            "src": "1776:5:28",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_bytes_storage_ptr",
+                                                                "typeString": "bytes"
+                                                            }
+                                                        }
+                                                    },
+                                                    "id": 10419,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "kind": "functionCall",
+                                                    "lValueRequested": false,
+                                                    "nameLocations": [],
+                                                    "names": [],
+                                                    "nodeType": "FunctionCall",
+                                                    "src": "1772:30:28",
+                                                    "tryCall": false,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                },
+                                                {
+                                                    "expression": {
+                                                        "id": 10420,
+                                                        "name": "GeneratedValues",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 10369,
+                                                        "src": "1809:15:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_struct$_generatedValues_$10226_memory_ptr",
+                                                            "typeString": "struct ReadSwapInputHookDataTestUtilities.generatedValues memory"
+                                                        }
+                                                    },
+                                                    "id": 10421,
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "memberLocation": "1825:13:28",
+                                                    "memberName": "hookDataBytes",
+                                                    "nodeType": "MemberAccess",
+                                                    "referencedDeclaration": 10223,
+                                                    "src": "1809:29:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_bytes4",
+                                                        "typeString": "bytes4"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_int128",
+                                                        "typeString": "int128"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_int256",
+                                                        "typeString": "int256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint128",
+                                                        "typeString": "uint128"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_bytes_memory_ptr",
+                                                        "typeString": "bytes memory"
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "id": 10398,
+                                                    "name": "abi",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4294967295,
+                                                    "src": "1520:3:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_magic_abi",
+                                                        "typeString": "abi"
+                                                    }
+                                                },
+                                                "id": 10399,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "lValueRequested": false,
+                                                "memberLocation": "1524:12:28",
+                                                "memberName": "encodePacked",
+                                                "nodeType": "MemberAccess",
+                                                "src": "1520:16:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
+                                                    "typeString": "function () pure returns (bytes memory)"
+                                                }
+                                            },
+                                            "id": 10422,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "kind": "functionCall",
+                                            "lValueRequested": false,
+                                            "nameLocations": [],
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "1520:324:28",
+                                            "tryCall": false,
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bytes_memory_ptr",
+                                                "typeString": "bytes memory"
+                                            }
+                                        },
+                                        "src": "1510:334:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_bytes_memory_ptr",
+                                            "typeString": "bytes memory"
+                                        }
+                                    },
+                                    "id": 10424,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1510:334:28"
+                                },
+                                {
+                                    "assignments": [
+                                        10426,
+                                        null
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10426,
+                                            "mutability": "mutable",
+                                            "name": "success",
+                                            "nameLocation": "1883:7:28",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10439,
+                                            "src": "1878:12:28",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_bool",
+                                                "typeString": "bool"
+                                            },
+                                            "typeName": {
+                                                "id": 10425,
+                                                "name": "bool",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "1878:4:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        },
+                                        null
+                                    ],
+                                    "id": 10434,
+                                    "initialValue": {
+                                        "arguments": [
+                                            {
+                                                "id": 10432,
+                                                "name": "payload",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 10395,
+                                                "src": "1918:7:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bytes_memory_ptr",
+                                                    "typeString": "bytes memory"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bytes_memory_ptr",
+                                                    "typeString": "bytes memory"
+                                                }
+                                            ],
+                                            "expression": {
+                                                "arguments": [
+                                                    {
+                                                        "id": 10429,
+                                                        "name": "wrapper",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 10335,
+                                                        "src": "1904:7:28",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                                                            "typeString": "contract CallDataWrapper"
+                                                        }
+                                                    }
+                                                ],
+                                                "expression": {
+                                                    "argumentTypes": [
+                                                        {
+                                                            "typeIdentifier": "t_contract$_CallDataWrapper_$10332",
+                                                            "typeString": "contract CallDataWrapper"
+                                                        }
+                                                    ],
+                                                    "id": 10428,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "lValueRequested": false,
+                                                    "nodeType": "ElementaryTypeNameExpression",
+                                                    "src": "1896:7:28",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_type$_t_address_$",
+                                                        "typeString": "type(address)"
+                                                    },
+                                                    "typeName": {
+                                                        "id": 10427,
+                                                        "name": "address",
+                                                        "nodeType": "ElementaryTypeName",
+                                                        "src": "1896:7:28",
+                                                        "typeDescriptions": {}
+                                                    }
+                                                },
+                                                "id": 10430,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "kind": "typeConversion",
+                                                "lValueRequested": false,
+                                                "nameLocations": [],
+                                                "names": [],
+                                                "nodeType": "FunctionCall",
+                                                "src": "1896:16:28",
+                                                "tryCall": false,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "id": 10431,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "1913:4:28",
+                                            "memberName": "call",
+                                            "nodeType": "MemberAccess",
+                                            "src": "1896:21:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_barecall_payable$_t_bytes_memory_ptr_$returns$_t_bool_$_t_bytes_memory_ptr_$",
+                                                "typeString": "function (bytes memory) payable returns (bool,bytes memory)"
+                                            }
+                                        },
+                                        "id": 10433,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1896:30:28",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$_t_bool_$_t_bytes_memory_ptr_$",
+                                            "typeString": "tuple(bool,bytes memory)"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "1877:49:28"
+                                },
+                                {
+                                    "expression": {
+                                        "arguments": [
+                                            {
+                                                "id": 10436,
+                                                "name": "success",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 10426,
+                                                "src": "1940:7:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            ],
+                                            "id": 10435,
+                                            "name": "assert",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 4294967293,
+                                            "src": "1933:6:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
+                                                "typeString": "function (bool) pure"
+                                            }
+                                        },
+                                        "id": 10437,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "1933:15:28",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 10438,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1933:15:28"
+                                }
+                            ]
+                        },
+                        "functionSelector": "493a750c",
+                        "id": 10440,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "readSwapInputHookDataTooLong_test",
+                        "nameLocation": "799:33:28",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10363,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 10348,
+                                    "mutability": "mutable",
+                                    "name": "poolIdSeed",
+                                    "nameLocation": "850:10:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10440,
+                                    "src": "842:18:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 10347,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "842:7:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 10350,
+                                    "mutability": "mutable",
+                                    "name": "offSetSeed",
+                                    "nameLocation": "876:10:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10440,
+                                    "src": "870:16:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 10349,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "870:5:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 10352,
+                                    "mutability": "mutable",
+                                    "name": "amountSeed",
+                                    "nameLocation": "903:10:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10440,
+                                    "src": "896:17:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int128",
+                                        "typeString": "int128"
+                                    },
+                                    "typeName": {
+                                        "id": 10351,
+                                        "name": "int128",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "896:6:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_int128",
+                                            "typeString": "int128"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 10354,
+                                    "mutability": "mutable",
+                                    "name": "qLimitSeed",
+                                    "nameLocation": "930:10:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10440,
+                                    "src": "923:17:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_int256",
+                                        "typeString": "int256"
+                                    },
+                                    "typeName": {
+                                        "id": 10353,
+                                        "name": "int256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "923:6:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_int256",
+                                            "typeString": "int256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 10356,
+                                    "mutability": "mutable",
+                                    "name": "crossThresholdSeed",
+                                    "nameLocation": "954:18:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10440,
+                                    "src": "946:26:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint128",
+                                        "typeString": "uint128"
+                                    },
+                                    "typeName": {
+                                        "id": 10355,
+                                        "name": "uint128",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "946:7:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint128",
+                                            "typeString": "uint128"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 10358,
+                                    "mutability": "mutable",
+                                    "name": "zeroForOneSeed",
+                                    "nameLocation": "988:14:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10440,
+                                    "src": "982:20:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    },
+                                    "typeName": {
+                                        "id": 10357,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "982:5:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 10360,
+                                    "mutability": "mutable",
+                                    "name": "hookDataByteCountSeed",
+                                    "nameLocation": "1020:21:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10440,
+                                    "src": "1012:29:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 10359,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1012:7:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                },
+                                {
+                                    "constant": false,
+                                    "id": 10362,
+                                    "mutability": "mutable",
+                                    "name": "gapSeed",
+                                    "nameLocation": "1059:7:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10440,
+                                    "src": "1051:15:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    },
+                                    "typeName": {
+                                        "id": 10361,
+                                        "name": "uint256",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "1051:7:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "832:240:28"
+                        },
+                        "returnParameters": {
+                            "id": 10364,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "1080:0:28"
+                        },
+                        "scope": 10441,
+                        "src": "790:1166:28",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 10442,
+                "src": "611:1348:28",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "56:1903:28"
+    },
+    "functionHashes": {
+        "_readSwapInput()": "d28b2ce7"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "86200",
+            "executionCost": "141",
+            "totalCost": "86341"
+        },
+        "external": {
+            "_readSwapInput()": "infinite"
+        }
+    }
+}

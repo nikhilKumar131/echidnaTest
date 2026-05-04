@@ -1,0 +1,1189 @@
+{
+    "contractName": "ReadModifyPoolGrowthProportionTest",
+    "abi": [],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.35+commit.47b9dedd\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadModifyPoolGrowth.sol\":\"ReadModifyPoolGrowthProportionTest\"},\"evmVersion\":\"osaka\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/home/nikhil/Desktop/one/assisment2026/core/contracts/interfaces/INofeeswap.sol\":{\"keccak256\":\"0xfef5fda9b1b5fa5c36ea5e880768f083651da7111e8a1094f2268a1a646be5e0\",\"urls\":[\"bzz-raw://e750625f7f479a970481f87d7364bd318cbd5328ad5b5555074423322cd9eb36\",\"dweb:/ipfs/QmUMi6gFuA8Xejm5ZmcWgwe5gGE1ecnEDhd7pVviAiE2PY\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/interfaces/ISentinel.sol\":{\"keccak256\":\"0x3d4b41ac7607fb097819da35d7b16bd3d7b1792d4c4b5487c4fd8c2e31cbd5cf\",\"urls\":[\"bzz-raw://b2616977e1c821bb64748f987d6d113c2b44664f8486da35ce17e7376c56bcf8\",\"dweb:/ipfs/QmXNEKi6X1nW85Eo2VT4tjN49iUaBZt5PwaaAEwpoK4nXj\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/interfaces/IStorageAccess.sol\":{\"keccak256\":\"0x7286e621bc6e6ea890a12c31143c52086c262b50bbd2de71adf7bdbf93a5fc47\",\"urls\":[\"bzz-raw://13eb8062ea0a70d29ca8067111d24d762f299a217144465beb0cee832e9568c7\",\"dweb:/ipfs/QmdpYCe4TtSbYvNaQPpyrpPkJMBb5CagRyumAT8secBRh1\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/interfaces/ITransientAccess.sol\":{\"keccak256\":\"0x5d416cff5a15960564f714d18824c0bbbefa29d05e6dfc5eee5f2e7c03d1ee09\",\"urls\":[\"bzz-raw://2acf1d6a189fc877c0973b7f8d79c53f6dc058691dde7a6ecdcca24d368c123d\",\"dweb:/ipfs/QmWJoqhQgfZVHg3M1mnWFBWmHBEnmsYPbetDBEXoBihn5N\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Calldata.sol\":{\"keccak256\":\"0x15e74985afb3f6ebb7a3f2171406bc33c76691ada6cf39ca83fc981e9c1b94a1\",\"urls\":[\"bzz-raw://c747a0e0d5336a955cb0e98baa0e6983d8c9a2ee087dba7d3d5ae0f4d14dc42d\",\"dweb:/ipfs/QmXw81WwhjrZG7gbxaZHrqHs1MhbacinoH4DSnk1oVFmbB\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Curve.sol\":{\"keccak256\":\"0x604099805e8ba7b822ba7291df8d107630a631a4182dfe4a79cc5c1e6b0b13fd\",\"urls\":[\"bzz-raw://f61309b7a4f83a4a7be2f4d53657e5db8fb3f745011a74f5bab6585fbc4265f4\",\"dweb:/ipfs/QmcvUKmXSSbiydxQmDiqCYaooGjNw96JLVjbcWXyGuGMk4\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Errors.sol\":{\"keccak256\":\"0xd47ce724fc7d199103fb63666bcf72554065692c0f6d42344fb00741834b37e3\",\"urls\":[\"bzz-raw://f974d049bd190aa70b1145ecf0e6282f7a2b51f2e8f9a8a3a38d4c0c56b30a54\",\"dweb:/ipfs/QmZiwgSMzsJ93QDsW34NRfiYfoByz33pZekpMzoZy8XwiM\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Events.sol\":{\"keccak256\":\"0x0da2feb2109b6ac5ea8034c8bdd74a00d4ae5f29197518a6bf087e5f88c2849c\",\"urls\":[\"bzz-raw://9fc6e51a65c6aad1411d76aeee0daa7ef061d9d560e77ee8949182c6b9eafadb\",\"dweb:/ipfs/QmfRFV4HJaT2aGqhJCtgFfDdYXQmH2ExYgqKGNNVAM3QRK\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/FullMath.sol\":{\"keccak256\":\"0xb47046f42b7cc4327a943057d3ce37f00f9d0b48ceb5aacc9577f25f6955a2f3\",\"urls\":[\"bzz-raw://bfc35e12f74b288e0cfbf5bcd2ec338b61e5e26ab42becb1661dbe845f756fc5\",\"dweb:/ipfs/QmZZt6frpfdPYzBuczYxZ5uq7i4hRRvXPyGuvbZR8ikes4\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Index.sol\":{\"keccak256\":\"0xe99414eb334a6b2da597ee6aec242fa323944f3b2b5bae83ad0740c4b449ed34\",\"urls\":[\"bzz-raw://c1efa3413bbe741a7d987ec119ce402e880a8edc002aa96edd0ecfe7c4dd2a6b\",\"dweb:/ipfs/QmeHanderkFFRHz2Ted1uxqPiBk4v7V5pBUND7iSuiXq2w\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Kernel.sol\":{\"keccak256\":\"0x93aac0b83f12c8076f0cd938f65a53c29dca8fdfd90d8df5f1895014b0f7b15e\",\"urls\":[\"bzz-raw://b33a13bd236b6304154d161e988cb8882130a04d2f3af3bc6d71ebe8a45dd06b\",\"dweb:/ipfs/QmQXximoDcMEV13Em5CSw886GBLxh75ySdPoPEu5ULVrV2\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/KernelCompact.sol\":{\"keccak256\":\"0x19335c3cadb3e646df9c0f4384b15b146a972bed40eb7f8a4175855d9e816f66\",\"urls\":[\"bzz-raw://50c689b5cf7062e9e199ea7f212d3d6a66baefcf7b1e90c3e55a5937870c13ec\",\"dweb:/ipfs/QmQLnbMrC1zoAvQpyeeiKuWSFiimRQTPYg3Y4MkJVbcxpC\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Memory.sol\":{\"keccak256\":\"0xc16382587e85f35f3bdc21a009764f6f5e4605b3c2245b3b56bec80ea372a8d0\",\"urls\":[\"bzz-raw://53773f45afa57321118da40f138048b9779fcbff6ff6d5deb2700d4206d344c3\",\"dweb:/ipfs/QmdtvtCUH5ayZiGgWa6hiARSNapi4dLA3vTWsJxBfZb5aB\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/PoolId.sol\":{\"keccak256\":\"0xa4d9eede61a8316a5359dcd9b7ebed969f8af5c68045e8dac54db128f57b3b63\",\"urls\":[\"bzz-raw://800b70128c87b73f6eaf5ae160995789f2b492c318739d9092a68f6dfaab1d08\",\"dweb:/ipfs/Qmf8QSbZb3fPAB5VivDF8j15SukfvherZ3BS22tmgDFaWo\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Price.sol\":{\"keccak256\":\"0x546a3ea19e34120fbe84b491f35f24a4f6c368e70c97d7596a5b73b01f282aca\",\"urls\":[\"bzz-raw://7925b4cdeaad6f4bd5e8221cb72d1689bb11e6a7cbcf7967436a6e161ba2f0e9\",\"dweb:/ipfs/QmVCFKPCSvh6tsRwjdDMjxNJrcVw19acQF9k9kMpTXwND7\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/SentinelCalls.sol\":{\"keccak256\":\"0xe272cff4b41adbb8420b51d3848652e48a787e42e73700bc5b3d59312352dd55\",\"urls\":[\"bzz-raw://ca790ad843720972091405d0f59cb9643c382b53471750dcbf2e4cc5ba77e068\",\"dweb:/ipfs/QmcppwyeV4Np7SFJaa9po6czg5CQJGHCyEuPtkzPpEmbHC\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Storage.sol\":{\"keccak256\":\"0x2751f33d0fa51248aa559a14dc92fc15b731712ea6d910723ddebb814ccdeb34\",\"urls\":[\"bzz-raw://b9e1e9f6ee58e06d0c02bec044cdef7648df00adeacb0101d9d59d8d874d2759\",\"dweb:/ipfs/QmdfrSGkeWBVnBtacu47iLs8Mu4FkLUP5EYPaSUn4jgEi4\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Tag.sol\":{\"keccak256\":\"0xd85de5cec21e2865ff3a9cbb342967eacb501b20f805eff5e55c1ae19340b192\",\"urls\":[\"bzz-raw://f39242740b17eff63c25b99e9c32d379e2ecc2f03459ae21495ef254e5a9c259\",\"dweb:/ipfs/QmNcPTEXdo1MJd3e56FAePqqw4K1zXJkGMSB96C6Fq7bHh\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X111.sol\":{\"keccak256\":\"0x5d98223e7e4fd5632a669b305db2878a304cbf00d4d1f1f6af42b0e8eb309110\",\"urls\":[\"bzz-raw://df74f60c6f9d6de6d689dd86b4c5272d770f1fe2a735c1884cc6205ee3af4b9f\",\"dweb:/ipfs/QmbudMCcbfNnisSENLvz6pGpb5DrBUdhjwWs7W1w3NWMtv\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X127.sol\":{\"keccak256\":\"0xb65c4f1da0c835d48669e6670e290edf80d25996d4a90001aa554d9cafb65ac9\",\"urls\":[\"bzz-raw://39ec75ea7af81131ed8efd1e5b05946a0737e9ae6fd16b8b8b1235e78bfdd4c9\",\"dweb:/ipfs/QmWWHXuWmZ8WmUeH8SNpD2r3ZbVU3EL1JR8iKbz6AWJ7wC\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X15.sol\":{\"keccak256\":\"0x5e486d1019c72ba1b7a1bd6b4c63f7c90b14fd9ba34a324522ed1be2a7e4e7d8\",\"urls\":[\"bzz-raw://05d9f2ecccce7357221507c53464fc1418d834d1fff577df546c375690464a53\",\"dweb:/ipfs/QmbLMPfXqmDUXURc58oj4ZSK685fMunWoh7aw8gx2qRaQf\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X208.sol\":{\"keccak256\":\"0x58317cb94ee61accfb478ad318146b4104f8625885981a788d6fa902e61a76ff\",\"urls\":[\"bzz-raw://54e653fde7c3ebe7ebf579efda9532048e37bd7fc56fd9093adaade62687acfd\",\"dweb:/ipfs/QmSNFkLrgUikNLL2cnAWmjFDyovY9xhDrq2R1EFvfX6rXL\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X216.sol\":{\"keccak256\":\"0x9f52ae6db0705778b48f5cad813a6ac24cac3545308c70cb6944d6a60c9b5304\",\"urls\":[\"bzz-raw://c4c3a77b6a95f0e8b6226c815d15707867db3eb48c8116bed4a7fe40d69d66db\",\"dweb:/ipfs/QmS8kdbTAhZc4urjTonjzKh2MwBniV9SpdBx9e9t4r2KKo\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X23.sol\":{\"keccak256\":\"0x913d07af1ba038531f067ff271294f156298efefa25576794f0966dd7f89572f\",\"urls\":[\"bzz-raw://73d48f7b80fa0ba0457ab0eb7547f78a68abb4f85e4abb00ed463656dc40b0a0\",\"dweb:/ipfs/QmeA9EgfBhcsmKsA488iArDNJWTxTWFSXo9DodccjtLh1q\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X47.sol\":{\"keccak256\":\"0x152e9132adce8735b5c41a2925cc2ae2bc206a04f825563f2d59ca5eab62cc36\",\"urls\":[\"bzz-raw://a713197db57e436a1ee81331df067c9c1db1cd2a92cebf0c15eb97764cf52c41\",\"dweb:/ipfs/QmZJaBzLvmSxVdP9nuj7annUCNnuC3y8MJ6ZgP4jnRF2DF\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X59.sol\":{\"keccak256\":\"0xce3f9b46206c5573e7538e07f73faef41568238b49ea9210de42a6eec67a72a9\",\"urls\":[\"bzz-raw://301a653c2683a3c888ab3d430e26f76f552c869f4453850f75892f289d80f2eb\",\"dweb:/ipfs/QmXa8MdDDvJmRD2Mw1nnJGLf92JaG7uSjMxHtAsMnw1Uyv\"]},\"/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/X74.sol\":{\"keccak256\":\"0x2945fe87dcae02ce66e3827bbc6daa47d8bec487fff1b8329f9696011fa2c761\",\"urls\":[\"bzz-raw://921a3a36dfe4f9c539eefc09fcb62186b84d8625f1c2537658f07c5057606903\",\"dweb:/ipfs/QmcjiuVVzMkG138mxmkydE5261k74uvU1u1HyLA87d9DG8\"]},\"/home/nikhil/Desktop/one/assisment2026/core/echidna/CallDataUtility.sol\":{\"keccak256\":\"0x3cbcdf082b4b4a7626ecaa5612fd1dc12ee720cd26b2324be7d1fedaf044284c\",\"urls\":[\"bzz-raw://a9310a44a43e1a51481474913f08b5962409e3c1882f19032f7e96c47a9cf2dd\",\"dweb:/ipfs/QmRdNEUMQSbdBEkz1ckXpg4p6KYheeebVsyyWZMDhnn9jw\"]},\"/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadModifyPoolGrowth.sol\":{\"keccak256\":\"0x1ee0f20de945a883d293418212f708ffc65679e9cd14e286378642adaae3c6dc\",\"urls\":[\"bzz-raw://b8ec83ea14221ac2dacf5b9eb3abc391362328b7e7f0393f47f0d80a5a03bca9\",\"dweb:/ipfs/QmTPYiZ1zC88PSHm8wsrJFWuSiid5VT8SNSercjiXeeyEA\"]}},\"version\":1}",
+    "bytecode": "608080604052346013576039908160188239f35b5f80fdfe5f80fdfea2646970667358221220520e7876525fa061a4e87b2789fd5736af96ba791eebc77390cea76271f346ac64736f6c63430008230033",
+    "deployedBytecode": "5f80fdfea2646970667358221220520e7876525fa061a4e87b2789fd5736af96ba791eebc77390cea76271f346ac64736f6c63430008230033",
+    "sourceMap": "1315:47:28:-:0;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "1315:47:28:-:0;;",
+    "sourcePath": "/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadModifyPoolGrowth.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.35+commit.47b9dedd"
+    },
+    "ast": {
+        "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/echidna/ReadModifyPoolGrowth.sol",
+        "exportedSymbols": {
+            "CallDataTestCommonUtilities": [
+                9970
+            ],
+            "CallDataWrapper": [
+                10044
+            ],
+            "Curve": [
+                1411
+            ],
+            "CurveLengthIsZero": [
+                1873
+            ],
+            "HookDataTooLong": [
+                2202
+            ],
+            "Index": [
+                3181
+            ],
+            "InvalidGrowthPortion": [
+                2102
+            ],
+            "InvalidNumberOfShares": [
+                2113
+            ],
+            "Kernel": [
+                3466
+            ],
+            "KernelCompact": [
+                3677
+            ],
+            "LogOffsetOutOfRange": [
+                2087
+            ],
+            "LogPriceOutOfRange": [
+                2108
+            ],
+            "PoolExists": [
+                2081
+            ],
+            "PoolIdCannotBeZero": [
+                2116
+            ],
+            "ReadModiftyKernelInputTestUtilities": [
+                9980
+            ],
+            "ReadModifyPoolGrowthProportionTest": [
+                10045
+            ],
+            "Tag": [
+                7179
+            ],
+            "TagsOutOfOrder": [
+                2096
+            ],
+            "X127": [
+                7645
+            ],
+            "X47": [
+                8983
+            ],
+            "X59": [
+                9174
+            ],
+            "_curve_": [
+                4221
+            ],
+            "_endOfStaticParams_": [
+                4302
+            ],
+            "_freeMemoryPointer_": [
+                4062
+            ],
+            "_hookDataByteCount_": [
+                4233
+            ],
+            "_hookData_": [
+                4224
+            ],
+            "_hookInputByteCount_": [
+                4074
+            ],
+            "_kernel_": [
+                4218
+            ],
+            "_poolGrowthPortion_": [
+                4290
+            ],
+            "_poolId_": [
+                4080
+            ],
+            "_shares_": [
+                4314
+            ],
+            "_swapInput_": [
+                4083
+            ],
+            "_zeroForOne_": [
+                4101
+            ],
+            "derivePoolId": [
+                5198
+            ],
+            "getDynamicParamsSlot": [
+                6710
+            ],
+            "getFreeMemoryPointer": [
+                4336
+            ],
+            "getHookInputByteCount": [
+                4364
+            ],
+            "getLogOffsetFromPoolId": [
+                5188
+            ],
+            "maxLogOffset": [
+                9293
+            ],
+            "minLogOffset": [
+                9284
+            ],
+            "oneX47": [
+                8999
+            ],
+            "readCollectInput": [
+                1382
+            ],
+            "readDonateInput": [
+                1118
+            ],
+            "readInitializeInput": [
+                810
+            ],
+            "readModifyKernelInput": [
+                1199
+            ],
+            "readModifyPoolGrowthPortionInput": [
+                1248
+            ],
+            "readModifyPositionInput": [
+                1014
+            ],
+            "readStorage": [
+                5665
+            ],
+            "readSwapInput": [
+                1365
+            ],
+            "readUpdateGrowthPortionsInput": [
+                1273
+            ],
+            "setAmountSpecified": [
+                4422
+            ],
+            "setCrossThreshold": [
+                4406
+            ],
+            "setCurve": [
+                4720
+            ],
+            "setFreeMemoryPointer": [
+                4343
+            ],
+            "setHookData": [
+                4734
+            ],
+            "setHookDataByteCount": [
+                4780
+            ],
+            "setHookInputByteCount": [
+                4371
+            ],
+            "setKernel": [
+                4704
+            ],
+            "setLogPriceLimit": [
+                4438
+            ],
+            "setLogPriceMax": [
+                5145
+            ],
+            "setLogPriceMaxOffsetted": [
+                5099
+            ],
+            "setLogPriceMin": [
+                5129
+            ],
+            "setLogPriceMinOffsetted": [
+                5083
+            ],
+            "setMsgSender": [
+                4378
+            ],
+            "setPoolGrowthPortion": [
+                5019
+            ],
+            "setPoolId": [
+                4392
+            ],
+            "setShares": [
+                5113
+            ],
+            "setSqrtInverseOffset": [
+                4957
+            ],
+            "setSqrtOffset": [
+                4941
+            ],
+            "setTag0": [
+                4909
+            ],
+            "setTag1": [
+                4925
+            ],
+            "sixteenX59": [
+                9237
+            ],
+            "thirtyTwoX59": [
+                9246
+            ],
+            "zeroX59": [
+                9185
+            ]
+        },
+        "id": 10046,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 9982,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".34"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "56:24:28"
+            },
+            {
+                "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Memory.sol",
+                "file": "../contracts/utilities/Memory.sol",
+                "id": 9995,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 10046,
+                "sourceUnit": 5174,
+                "src": "82:271:28",
+                "symbolAliases": [
+                    {
+                        "foreign": {
+                            "id": 9983,
+                            "name": "getFreeMemoryPointer",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4336,
+                            "src": "93:20:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9984,
+                            "name": "getHookInputByteCount",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4364,
+                            "src": "117:21:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9985,
+                            "name": "_poolId_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4080,
+                            "src": "142:8:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9986,
+                            "name": "_kernel_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4218,
+                            "src": "154:8:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9987,
+                            "name": "_shares_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4314,
+                            "src": "166:8:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9988,
+                            "name": "_curve_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4221,
+                            "src": "178:7:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9989,
+                            "name": "_poolGrowthPortion_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4290,
+                            "src": "187:19:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9990,
+                            "name": "_hookData_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4224,
+                            "src": "210:10:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9991,
+                            "name": "_hookDataByteCount_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4233,
+                            "src": "222:19:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9992,
+                            "name": "_hookInputByteCount_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4074,
+                            "src": "243:20:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9993,
+                            "name": "_freeMemoryPointer_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4062,
+                            "src": "267:19:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9994,
+                            "name": "_endOfStaticParams_",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 4302,
+                            "src": "290:19:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    }
+                ],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/contracts/utilities/Calldata.sol",
+                "file": "../contracts/utilities/Calldata.sol",
+                "id": 9996,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 10046,
+                "sourceUnit": 1383,
+                "src": "355:45:28",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/home/nikhil/Desktop/one/assisment2026/core/echidna/CallDataUtility.sol",
+                "file": "./CallDataUtility.sol",
+                "id": 9999,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 10046,
+                "sourceUnit": 9981,
+                "src": "401:102:28",
+                "symbolAliases": [
+                    {
+                        "foreign": {
+                            "id": 9997,
+                            "name": "CallDataTestCommonUtilities",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 9970,
+                            "src": "409:27:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    },
+                    {
+                        "foreign": {
+                            "id": 9998,
+                            "name": "ReadModiftyKernelInputTestUtilities",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 9980,
+                            "src": "437:35:28",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    }
+                ],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "CallDataWrapper",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 10044,
+                "linearizedBaseContracts": [
+                    10044
+                ],
+                "name": "CallDataWrapper",
+                "nameLocation": "514:15:28",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 10042,
+                            "nodeType": "Block",
+                            "src": "685:625:28",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        10006
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10006,
+                                            "mutability": "mutable",
+                                            "name": "poolId",
+                                            "nameLocation": "703:6:28",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10042,
+                                            "src": "695:14:28",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 10005,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "695:7:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 10007,
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "695:14:28"
+                                },
+                                {
+                                    "assignments": [
+                                        10009
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10009,
+                                            "mutability": "mutable",
+                                            "name": "poolGrowthPortion",
+                                            "nameLocation": "727:17:28",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10042,
+                                            "src": "719:25:28",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 10008,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "719:7:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 10010,
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "719:25:28"
+                                },
+                                {
+                                    "assignments": [
+                                        10012
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10012,
+                                            "mutability": "mutable",
+                                            "name": "hookInputByteCount",
+                                            "nameLocation": "762:18:28",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10042,
+                                            "src": "754:26:28",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 10011,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "754:7:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 10013,
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "754:26:28"
+                                },
+                                {
+                                    "assignments": [
+                                        10015
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 10015,
+                                            "mutability": "mutable",
+                                            "name": "freeMemoryPointer",
+                                            "nameLocation": "798:17:28",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 10042,
+                                            "src": "790:25:28",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 10014,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "790:7:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 10016,
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "790:25:28"
+                                },
+                                {
+                                    "AST": {
+                                        "nativeSrc": "833:241:28",
+                                        "nodeType": "YulBlock",
+                                        "src": "833:241:28",
+                                        "statements": [
+                                            {
+                                                "nativeSrc": "847:25:28",
+                                                "nodeType": "YulAssignment",
+                                                "src": "847:25:28",
+                                                "value": {
+                                                    "arguments": [
+                                                        {
+                                                            "name": "_poolId_",
+                                                            "nativeSrc": "863:8:28",
+                                                            "nodeType": "YulIdentifier",
+                                                            "src": "863:8:28"
+                                                        }
+                                                    ],
+                                                    "functionName": {
+                                                        "name": "mload",
+                                                        "nativeSrc": "857:5:28",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "857:5:28"
+                                                    },
+                                                    "nativeSrc": "857:15:28",
+                                                    "nodeType": "YulFunctionCall",
+                                                    "src": "857:15:28"
+                                                },
+                                                "variableNames": [
+                                                    {
+                                                        "name": "poolId",
+                                                        "nativeSrc": "847:6:28",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "847:6:28"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "nativeSrc": "885:47:28",
+                                                "nodeType": "YulAssignment",
+                                                "src": "885:47:28",
+                                                "value": {
+                                                    "arguments": [
+                                                        {
+                                                            "name": "_poolGrowthPortion_",
+                                                            "nativeSrc": "912:19:28",
+                                                            "nodeType": "YulIdentifier",
+                                                            "src": "912:19:28"
+                                                        }
+                                                    ],
+                                                    "functionName": {
+                                                        "name": "mload",
+                                                        "nativeSrc": "906:5:28",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "906:5:28"
+                                                    },
+                                                    "nativeSrc": "906:26:28",
+                                                    "nodeType": "YulFunctionCall",
+                                                    "src": "906:26:28"
+                                                },
+                                                "variableNames": [
+                                                    {
+                                                        "name": "poolGrowthPortion",
+                                                        "nativeSrc": "885:17:28",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "885:17:28"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "nativeSrc": "945:58:28",
+                                                "nodeType": "YulAssignment",
+                                                "src": "945:58:28",
+                                                "value": {
+                                                    "arguments": [
+                                                        {
+                                                            "kind": "number",
+                                                            "nativeSrc": "971:3:28",
+                                                            "nodeType": "YulLiteral",
+                                                            "src": "971:3:28",
+                                                            "type": "",
+                                                            "value": "240"
+                                                        },
+                                                        {
+                                                            "arguments": [
+                                                                {
+                                                                    "name": "_hookInputByteCount_",
+                                                                    "nativeSrc": "981:20:28",
+                                                                    "nodeType": "YulIdentifier",
+                                                                    "src": "981:20:28"
+                                                                }
+                                                            ],
+                                                            "functionName": {
+                                                                "name": "mload",
+                                                                "nativeSrc": "975:5:28",
+                                                                "nodeType": "YulIdentifier",
+                                                                "src": "975:5:28"
+                                                            },
+                                                            "nativeSrc": "975:27:28",
+                                                            "nodeType": "YulFunctionCall",
+                                                            "src": "975:27:28"
+                                                        }
+                                                    ],
+                                                    "functionName": {
+                                                        "name": "shl",
+                                                        "nativeSrc": "967:3:28",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "967:3:28"
+                                                    },
+                                                    "nativeSrc": "967:36:28",
+                                                    "nodeType": "YulFunctionCall",
+                                                    "src": "967:36:28"
+                                                },
+                                                "variableNames": [
+                                                    {
+                                                        "name": "hookInputByteCount",
+                                                        "nativeSrc": "945:18:28",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "945:18:28"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "nativeSrc": "1016:47:28",
+                                                "nodeType": "YulAssignment",
+                                                "src": "1016:47:28",
+                                                "value": {
+                                                    "arguments": [
+                                                        {
+                                                            "name": "_freeMemoryPointer_",
+                                                            "nativeSrc": "1043:19:28",
+                                                            "nodeType": "YulIdentifier",
+                                                            "src": "1043:19:28"
+                                                        }
+                                                    ],
+                                                    "functionName": {
+                                                        "name": "mload",
+                                                        "nativeSrc": "1037:5:28",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "1037:5:28"
+                                                    },
+                                                    "nativeSrc": "1037:26:28",
+                                                    "nodeType": "YulFunctionCall",
+                                                    "src": "1037:26:28"
+                                                },
+                                                "variableNames": [
+                                                    {
+                                                        "name": "freeMemoryPointer",
+                                                        "nativeSrc": "1016:17:28",
+                                                        "nodeType": "YulIdentifier",
+                                                        "src": "1016:17:28"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "evmVersion": "osaka",
+                                    "externalReferences": [
+                                        {
+                                            "declaration": 4062,
+                                            "isOffset": false,
+                                            "isSlot": false,
+                                            "src": "1043:19:28",
+                                            "valueSize": 1
+                                        },
+                                        {
+                                            "declaration": 4074,
+                                            "isOffset": false,
+                                            "isSlot": false,
+                                            "src": "981:20:28",
+                                            "valueSize": 1
+                                        },
+                                        {
+                                            "declaration": 4290,
+                                            "isOffset": false,
+                                            "isSlot": false,
+                                            "src": "912:19:28",
+                                            "valueSize": 1
+                                        },
+                                        {
+                                            "declaration": 4080,
+                                            "isOffset": false,
+                                            "isSlot": false,
+                                            "src": "863:8:28",
+                                            "valueSize": 1
+                                        },
+                                        {
+                                            "declaration": 10015,
+                                            "isOffset": false,
+                                            "isSlot": false,
+                                            "src": "1016:17:28",
+                                            "valueSize": 1
+                                        },
+                                        {
+                                            "declaration": 10012,
+                                            "isOffset": false,
+                                            "isSlot": false,
+                                            "src": "945:18:28",
+                                            "valueSize": 1
+                                        },
+                                        {
+                                            "declaration": 10009,
+                                            "isOffset": false,
+                                            "isSlot": false,
+                                            "src": "885:17:28",
+                                            "valueSize": 1
+                                        },
+                                        {
+                                            "declaration": 10006,
+                                            "isOffset": false,
+                                            "isSlot": false,
+                                            "src": "847:6:28",
+                                            "valueSize": 1
+                                        }
+                                    ],
+                                    "id": 10017,
+                                    "nodeType": "InlineAssembly",
+                                    "src": "825:249:28"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 10022,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "expression": {
+                                                "id": 10018,
+                                                "name": "returnedValues",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 10003,
+                                                "src": "1084:14:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_returnedValues_$9979_memory_ptr",
+                                                    "typeString": "struct ReadModiftyKernelInputTestUtilities.returnedValues memory"
+                                                }
+                                            },
+                                            "id": 10020,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberLocation": "1099:6:28",
+                                            "memberName": "poolId",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 9972,
+                                            "src": "1084:21:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 10021,
+                                            "name": "poolId",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 10006,
+                                            "src": "1108:6:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1084:30:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 10023,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1084:30:28"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 10028,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "expression": {
+                                                "id": 10024,
+                                                "name": "returnedValues",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 10003,
+                                                "src": "1124:14:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_returnedValues_$9979_memory_ptr",
+                                                    "typeString": "struct ReadModiftyKernelInputTestUtilities.returnedValues memory"
+                                                }
+                                            },
+                                            "id": 10026,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberLocation": "1139:17:28",
+                                            "memberName": "poolGrowthPortion",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 9974,
+                                            "src": "1124:32:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 10027,
+                                            "name": "poolGrowthPortion",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 10009,
+                                            "src": "1159:17:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1124:52:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 10029,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1124:52:28"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 10034,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "expression": {
+                                                "id": 10030,
+                                                "name": "returnedValues",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 10003,
+                                                "src": "1186:14:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_returnedValues_$9979_memory_ptr",
+                                                    "typeString": "struct ReadModiftyKernelInputTestUtilities.returnedValues memory"
+                                                }
+                                            },
+                                            "id": 10032,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberLocation": "1201:18:28",
+                                            "memberName": "hookInputByteCount",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 9976,
+                                            "src": "1186:33:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 10033,
+                                            "name": "hookInputByteCount",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 10012,
+                                            "src": "1222:18:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1186:54:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 10035,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1186:54:28"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 10040,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "expression": {
+                                                "id": 10036,
+                                                "name": "returnedValues",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 10003,
+                                                "src": "1250:14:28",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_struct$_returnedValues_$9979_memory_ptr",
+                                                    "typeString": "struct ReadModiftyKernelInputTestUtilities.returnedValues memory"
+                                                }
+                                            },
+                                            "id": 10038,
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "memberLocation": "1265:17:28",
+                                            "memberName": "freeMemoryPointer",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 9978,
+                                            "src": "1250:32:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "id": 10039,
+                                            "name": "freeMemoryPointer",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 10015,
+                                            "src": "1285:17:28",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "src": "1250:52:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        }
+                                    },
+                                    "id": 10041,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "1250:52:28"
+                                }
+                            ]
+                        },
+                        "functionSelector": "75fa8d22",
+                        "id": 10043,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "readModifyPoolGrwothProportion",
+                        "nameLocation": "545:30:28",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10000,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "575:2:28"
+                        },
+                        "returnParameters": {
+                            "id": 10004,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 10003,
+                                    "mutability": "mutable",
+                                    "name": "returnedValues",
+                                    "nameLocation": "665:14:28",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 10043,
+                                    "src": "607:72:28",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_returnedValues_$9979_memory_ptr",
+                                        "typeString": "struct ReadModiftyKernelInputTestUtilities.returnedValues"
+                                    },
+                                    "typeName": {
+                                        "id": 10002,
+                                        "nodeType": "UserDefinedTypeName",
+                                        "pathNode": {
+                                            "id": 10001,
+                                            "name": "ReadModiftyKernelInputTestUtilities.returnedValues",
+                                            "nameLocations": [
+                                                "607:35:28",
+                                                "643:14:28"
+                                            ],
+                                            "nodeType": "IdentifierPath",
+                                            "referencedDeclaration": 9979,
+                                            "src": "607:50:28"
+                                        },
+                                        "referencedDeclaration": 9979,
+                                        "src": "607:50:28",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_returnedValues_$9979_storage_ptr",
+                                            "typeString": "struct ReadModiftyKernelInputTestUtilities.returnedValues"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "597:88:28"
+                        },
+                        "scope": 10044,
+                        "src": "536:774:28",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 10046,
+                "src": "505:808:28",
+                "usedErrors": [],
+                "usedEvents": []
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "canonicalName": "ReadModifyPoolGrowthProportionTest",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 10045,
+                "linearizedBaseContracts": [
+                    10045
+                ],
+                "name": "ReadModifyPoolGrowthProportionTest",
+                "nameLocation": "1324:34:28",
+                "nodeType": "ContractDefinition",
+                "nodes": [],
+                "scope": 10046,
+                "src": "1315:47:28",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "56:1306:28"
+    },
+    "functionHashes": {},
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "11400",
+            "executionCost": "69",
+            "totalCost": "11469"
+        }
+    }
+}
