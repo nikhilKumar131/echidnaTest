@@ -1,7 +1,8 @@
 corpusDir: './corpus/'
 testMode: assertion
 coverage: true
-solcArgs: "--evm-version cancun --optimize-runs 200 --via-ir"
-testLimit: 5000
+solcArgs: "--evm-version cancun --optimize-runs 200"
+testLimit: 10000
 shrinkLimit: 10000
 gasLimit: 100000000
+cryticArgs: ["--solc-remaps", "@openzeppelin/=lib/openzeppelin-contracts/contracts/ @governance/=lib/governance/contracts/ @solady/=lib/solady/src/"]
